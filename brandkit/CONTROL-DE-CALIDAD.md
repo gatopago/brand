@@ -15,7 +15,6 @@ plantillas. No se aprobó automáticamente arte nuevo ni se integró nada al fro
 | Pipeline y entregas | 19 resultados de pruebas aprobados; incluye builds idénticos, falla segura ante copy demasiado ancho y ZIP interno/externo extraídos |
 | Entrega interna | 511 entradas, 513 archivos; conserva propuestas y QA, excluye 684 archivos retirados |
 | Entrega externa | 33 assets de base, dos documentos de entrega y manifiesto; sin propuestas, personaje, originales ni planes internos |
-| Paquete npm local | `@gatopago/brand-assets`, privado, 33 assets; extracción, hashes, imports y rutas de fuentes comprobados; sin publicar |
 | Wordmarks | Cuatro SVG con contornos reales, sin elementos text ni fuentes externas; PNG transparentes y trazabilidad del WOFF2 local |
 | Conservación | 1.024 archivos gráficos/tipográficos previos comparados: 1.020 idénticos byte a byte; tres PNG de favicon cambian codificación pero conservan RGBA exacto; el ICO contiene esos mismos PNG |
 | Herramientas | Sharp 0.35.5 y dependencias fijadas; `npm audit` informa cero vulnerabilidades conocidas en esta instalación |
@@ -42,7 +41,7 @@ preparación; mantienen su condición de candidatos.
 ### Límites de cierre
 
 Falta la aprobación visual de Daniel de las propuestas; [política y checklist](./01-manual/aprobacion-y-versiones.md).
-La PWA sigue siendo una referencia histórica, no una migración realizada. No se
+No se
 probó la app, no se reanudó el pitch deck, no se publicaron paquetes, no se hizo
 commit/push ni despliegue. Los ZIP de fechas anteriores en `output/` son archivos
 locales históricos, no las entregas de esta candidata.
@@ -85,8 +84,7 @@ Se revisaron las 14 ilustraciones y una hoja de contacto con los 147 fotogramas.
 
 - **Personaje:** los recortes conservan semitransparencias y variaciones de color de las hojas. La expresión neutral contiene 7.018 valores RGB visibles y 71.243 píxeles semitransparentes. No cumple la paleta cerrada ni la retícula uniforme del encargo. Se entregan escalas enteras HD y hojas de secuencia; amplían el original sin inventar detalle. Faltan aprobación pieza a pieza, el arte vectorial del personaje y el borde para oscuro. Ver [estado del personaje](./03-personaje/README.md).
 - **Wordmark en la base:** la composición era texto vivo. En 1.0.0-rc.1 se añadieron trazados como propuestas, aún sin aprobación para imprenta.
-- **PWA:** los iconos incluidos siguen siendo un snapshot anterior. Su migración al símbolo actual está pendiente.
-- **Implementación:** este repositorio ya no contiene un frontend. La aplicación de marca se verifica en el repositorio unificado de la app y la landing. Las observaciones de la app en [producto](./01-manual/producto-app.md) son un snapshot del 28 de septiembre, no una nueva revisión de la app en vivo.
+- **Implementación:** este repositorio no contiene un frontend ni snapshots de la app (retirados el 7 de octubre de 2026). La marca aplicada se verifica en el repositorio de la app y la landing.
 
 Esta revisión cierra la integridad y la organización de la entrega local. No publica cambios, no reemplaza la aprobación artística y no evalúa ejecución financiera ni seguridad de la app. El PDF y los ZIP anteriores de `output/` no forman parte del paquete actualizado.
 

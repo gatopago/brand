@@ -14,7 +14,7 @@ La política legible por las herramientas está en [release.json](../release.jso
 | En revisión | Nuevos logos horizontales y variantes, personaje, componentes y plantillas | Solo entrega interna |
 | Retirado | Trabajo en `descartado/` | Versionado para consulta; fuera de ambas entregas |
 
-Los originales, los snapshots PWA y los planes extensos son referencias internas,
+Los originales y los planes extensos son referencias internas,
 no assets listos para instalar. Los HTML son catálogos locales, no otra landing.
 
 ## Decisiones pendientes
@@ -26,7 +26,6 @@ no assets listos para instalar. Los HTML son catálogos locales, no otra landing
 | Personaje | Las 14 poses y 20 animaciones; especialmente cola, siesta, asomarse, repair rail y swap | Pendiente; no se cambiaron frames en esta preparación |
 | Componentes | Jerarquía, padding, estados de botones, foco de teclado, diálogos, recibo y QR | Referencia visual, sin integrar a la app |
 | Plantillas | Encuadre, tamaño de titulares, zona libre para avatar y contenidos de ejemplo | Pendiente |
-| PWA | Iconos maskable, manifest y comportamiento real de instalación | Fuera de esta preparación; snapshot histórico |
 
 El nombre interno del personaje sigue siendo Meli; no se añade a textos públicos.
 La validación de un QR de ejemplo no prueba el flujo financiero de cobro.

@@ -42,7 +42,16 @@ Se prepararon [cuatro wordmarks trazados](../02-logos/horizontal/README.md) desd
 | Pendiente | Pending | #F6C65B | En proceso, sin implicar fallo |
 | Error | Danger | #FF6B7A | Error y riesgo; siempre con texto o icono |
 
-Estos cuatro estados son los de fondo oscuro. Sobre Milk o Paper, la app usa variantes oscuras con contraste AA (ver [producto](./producto-app.md#estados-dos-juegos-según-el-fondo)). Ink Soft y Ink Raised completan superficies oscuras en los archivos de tokens. No asignar colores al azar a cada producto. Priorizar fondos neutros, un acento dominante y estados semánticos puntuales.
+Estos cuatro estados son los de fondo oscuro: sobre Milk no llegan al contraste mínimo (Growth #71D5A1 da 1,70:1). Sobre Milk o Paper se usan estas variantes, que cumplen AA:
+
+| Estado | Sobre claro | Contraste sobre Milk | Sobre Ink |
+|---|---|---:|---|
+| Éxito | #287B55 | 4,92:1 | #71D5A1 (10,98:1) |
+| Información | #256AA8 | 5,38:1 | #79B9FF |
+| Pendiente | #8A6200 | 5,21:1 | #F6C65B |
+| Error | #B62E47 | 5,74:1 | #FF6B7A |
+
+Un estado nunca va solo en color: lleva texto o icono. Ink Soft y Ink Raised completan superficies oscuras en los archivos de tokens. No asignar colores al azar a cada producto. Priorizar fondos neutros, un acento dominante y estados semánticos puntuales.
 
 Cat Fire con texto Ink es la combinación primaria. Milk sobre Cat Fire no alcanza AA para texto normal: no copiar el aspecto de un botón sin comprobar la legibilidad. El archivo [contraste.json](../05-colores/contraste.json) contiene los cálculos de las combinaciones principales; no certifica toda la interfaz.
 

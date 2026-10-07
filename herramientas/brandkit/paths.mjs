@@ -1,19 +1,6 @@
 import path from 'node:path';
 import fs from 'node:fs/promises';
 
-/** An external app checkout is only used when explicitly requested. */
-export async function appRoot() {
-  const flag = process.argv.indexOf('--app-dir');
-  if (flag < 0) return null;
-  const supplied = process.argv[flag + 1];
-  if (!supplied || supplied.startsWith('--')) {
-    throw new Error('Pass --app-dir <path-to-app-checkout>.');
-  }
-  const root = path.resolve(supplied);
-  await fs.access(path.join(root, 'client/public/manifest.webmanifest'));
-  return root;
-}
-
 export function argument(name, fallback) {
   const flag = process.argv.indexOf(name);
   if (flag < 0) return fallback;

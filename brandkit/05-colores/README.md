@@ -29,4 +29,4 @@ La fuente editable es [tokens.json](./tokens.json). Se conservan los valores de 
 | milk / cat-fire | 3.19:1 | No |
 | cat-shadow / milk | 4.76:1 | Sí |
 
-No son colores Pantone ni una conversión CMYK aprobada para imprenta. `tokens-app.json` conserva una referencia histórica de la app, no su configuración actual. Verificar cada aplicación en su propio repositorio.
+No son colores Pantone ni una conversión CMYK aprobada para imprenta.

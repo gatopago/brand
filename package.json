@@ -15,7 +15,6 @@
     "brandkit:zip": "node herramientas/package-brandkit.mjs",
     "brandkit:test": "node --test herramientas/brandkit/pipeline.test.mjs herramientas/brandkit/release.test.mjs",
     "brandkit:external": "node herramientas/package-brandkit.mjs --external",
-    "brandkit:frontend": "node herramientas/package-frontend.mjs",
     "contenido:calendario": "node herramientas/brandkit/calendario.mjs"
   },
   "dependencies": {

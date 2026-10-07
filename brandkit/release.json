@@ -7,7 +7,7 @@
   "approvedPrefixes": ["02-logos/simbolo/", "02-logos/iconos-web/", "04-tipografia/", "08-imagenes/avatar/"],
   "approvedFiles": ["05-colores/tokens.json", "05-colores/tokens.css", "05-colores/paleta.csv", "05-colores/gatopago.gpl", "05-colores/contraste.json", "05-colores/README.md"],
   "reviewPrefixes": ["02-logos/variantes/", "02-logos/horizontal/", "03-personaje/", "09-componentes/", "10-plantillas/"],
-  "referencePrefixes": ["02-logos/pwa/", "06-originales/", "07-referencias/"],
+  "referencePrefixes": ["06-originales/", "07-referencias/"],
   "retiredPrefixes": ["descartado/"],
   "notes": "Approved means the existing identity baseline, not a new sign-off. New logo variants, templates, components and character work require explicit human approval. No publication is authorized."
 }

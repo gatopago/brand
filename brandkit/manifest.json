@@ -8,15 +8,15 @@
   "files": [
     {
       "path": "01-manual/aprobacion-y-versiones.md",
-      "bytes": 3413,
-      "sha256": "1dcc07bbd09db2639474ebe5a81465f4b2a9cb6761b2ceceb9becadf98d2fc01",
+      "bytes": 3270,
+      "sha256": "a64fa8557ee2f4c2e559cce19aba3b33f237a69ba82241c0f8bb506bb28dc03a",
       "source": "brandkit editorial / generated",
       "status": "internal"
     },
     {
       "path": "01-manual/entrega-y-mantenimiento.md",
-      "bytes": 9356,
-      "sha256": "15aa6b0dba9664aef4c88bdcecc84e8fb07a10beed320ccca5944a3c74f1acd3",
+      "bytes": 8797,
+      "sha256": "932fd4d936f2b9f988ab3ba3d53ea13f014cd557ce64cee45dec86b65d2db260",
       "source": "brandkit editorial / generated",
       "status": "internal"
     },
@@ -28,37 +28,23 @@
       "status": "internal"
     },
     {
-      "path": "01-manual/integracion-frontend.md",
-      "bytes": 2884,
-      "sha256": "8c7d7e4154138aebb7e91f30782092bf0d3631c89ea061f4e9f16e97556f77db",
-      "source": "brandkit editorial / generated",
-      "status": "internal"
-    },
-    {
       "path": "01-manual/movimiento-y-componentes.md",
-      "bytes": 5649,
-      "sha256": "1d07d0fe152bb71bb11c58c02477ed048c424da6012771d736bab2e2cc9c9020",
-      "source": "brandkit editorial / generated",
-      "status": "internal"
-    },
-    {
-      "path": "01-manual/producto-app.md",
-      "bytes": 10221,
-      "sha256": "638bef83668ff502d6b608592f0b566067f6dc0a6c8d84e12ea1836a36c38fa4",
+      "bytes": 5332,
+      "sha256": "b2673d479267eee5c2237d582d47e23a37f3810d4f9e18a199b2de258fd65886",
       "source": "brandkit editorial / generated",
       "status": "internal"
     },
     {
       "path": "01-manual/sistema-visual.md",
-      "bytes": 7566,
-      "sha256": "58514c488e149abc0609b801e143e6b101dcb4d30fd0a7d6b400f5ceb53da88f",
+      "bytes": 7872,
+      "sha256": "c935551d296604eb7a333df2b2a9c6fd7be56fdf27b2964017b159750e44a4b6",
       "source": "brandkit editorial / generated",
       "status": "internal"
     },
     {
       "path": "02-logos/README.md",
-      "bytes": 3982,
-      "sha256": "c0f1bdbc9b5e98206803b90682a5a12e1a6a994580641542d40fd526b4e08ce7",
+      "bytes": 3214,
+      "sha256": "feb09745a586326e6aceecc35fad4c65dc71f5fef7128f1a250b27913db6c0ec",
       "source": "brandkit editorial / generated",
       "status": "internal"
     },
@@ -278,55 +264,6 @@
       "sha256": "63878ab202ca9f21ff4ac21fbb044a3ae5acb40a1a0936df3e31f970209babcc",
       "source": "brandkit canonical",
       "status": "internal"
-    },
-    {
-      "path": "02-logos/pwa/apple-touch-icon.png",
-      "bytes": 26847,
-      "sha256": "2246c3cfa06c4940630c43ce4fc40d79e611ee314ebd539b7bf589bce3622b98",
-      "source": "brandkit canonical",
-      "status": "reference",
-      "image": {
-        "format": "png",
-        "width": 180,
-        "height": 180,
-        "hasAlpha": true,
-        "pages": 1
-      }
-    },
-    {
-      "path": "02-logos/pwa/icon-192.png",
-      "bytes": 30041,
-      "sha256": "91b3cbaae29ae0d65133ae2ef843485040cbc0e2cec8dc4cf753025bc040caab",
-      "source": "brandkit canonical",
-      "status": "reference",
-      "image": {
-        "format": "png",
-        "width": 192,
-        "height": 192,
-        "hasAlpha": true,
-        "pages": 1
-      }
-    },
-    {
-      "path": "02-logos/pwa/icon-512.png",
-      "bytes": 88219,
-      "sha256": "0d337e9a85f23ab073886ea76ef6eb85f60cf40e2dff3b022462bc7dc70f8a5a",
-      "source": "brandkit canonical",
-      "status": "reference",
-      "image": {
-        "format": "png",
-        "width": 512,
-        "height": 512,
-        "hasAlpha": true,
-        "pages": 1
-      }
-    },
-    {
-      "path": "02-logos/pwa/manifest.webmanifest",
-      "bytes": 1813,
-      "sha256": "3636e5655816c291e9babeecf41b0c9dfb289354c42d6c6e86e904426573870b",
-      "source": "brandkit canonical",
-      "status": "reference"
     },
     {
       "path": "02-logos/simbolo/gatopago-16.svg",
@@ -6224,8 +6161,8 @@
     },
     {
       "path": "05-colores/README.md",
-      "bytes": 1436,
-      "sha256": "380667ec5aab9147c54781652e5dd33095e4d619131e6a7e1a297401539fe25c",
+      "bytes": 1290,
+      "sha256": "7ed6a923c86c3ca7c720e24c6fd856b9d7fa7458057aec240e51be51ccfe8cd2",
       "source": "brandkit editorial / generated",
       "status": "approved-baseline"
     },
@@ -6249,13 +6186,6 @@
       "sha256": "5e09ad2ffafe9ed755b5b3b958390e4c87969edb6764a371fa8f0bf14bd0bffb",
       "source": "brandkit editorial / generated",
       "status": "approved-baseline"
-    },
-    {
-      "path": "05-colores/tokens-app.json",
-      "bytes": 1428,
-      "sha256": "1649fd6f71a69aece823369ae42fcdd2f5f8ba4cd6efec93365bef1770cd48ba",
-      "source": "brandkit editorial / generated",
-      "status": "internal"
     },
     {
       "path": "05-colores/tokens.css",
@@ -6738,15 +6668,15 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 3285,
-      "sha256": "b5ce91d467d35e3fa1e5c39dc1359793d5e5dd97ba1771fd2005f0282ea4b5c8",
+      "bytes": 3847,
+      "sha256": "47bcd13084892fd848686eeb3d15fc9b7661b86ed38e6e7ade752283a469e3b7",
       "source": "brandkit editorial / generated",
       "status": "internal"
     },
     {
       "path": "README.md",
-      "bytes": 5116,
-      "sha256": "a479a444b6d783e88f07b9a76c1242fb97d9752b095176026fbdb303c5a3896a",
+      "bytes": 4555,
+      "sha256": "3ece909ceb5ffc22872f98d169a0dbf43b05b4c6eb8b744233bbbe90ffd334a4",
       "source": "brandkit editorial / generated",
       "status": "internal"
     },
@@ -15663,15 +15593,15 @@
     },
     {
       "path": "index.html",
-      "bytes": 20103,
-      "sha256": "52229a20d82cd09cc1c114cc1dbe9b769e11e6c1669b684bc8c72ac6f03cacc5",
+      "bytes": 19869,
+      "sha256": "a003efebd6d6ad1c694b98b08b9a91f0948ed6be43953199d3c40e9dd5da6802",
       "source": "brandkit editorial / generated",
       "status": "internal"
     },
     {
       "path": "release.json",
-      "bytes": 929,
-      "sha256": "59868d33f9ea6d7fa8dd8da075a2a202ef91279abcb530bffd54269865cfd4d4",
+      "bytes": 912,
+      "sha256": "ce75f1521a6f6501ed66af3fe680beba24667614fdc70144ee764c7eb1270bee",
       "source": "brandkit editorial / generated",
       "status": "internal"
     }

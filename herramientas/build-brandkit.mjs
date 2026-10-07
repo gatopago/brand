@@ -4,7 +4,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
-import { appRoot, files, inside, removeWorkdir, slash } from './brandkit/paths.mjs';
+import { files, inside, removeWorkdir, slash } from './brandkit/paths.mjs';
 import { verifyKit } from './verify-brandkit.mjs';
 import { symbolFiles } from './brandkit/simbolo.mjs';
 import { characterGallery } from './brandkit/galeria-personaje.mjs';
@@ -17,7 +17,6 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const currentKit = path.join(root, 'brandkit');
 const release = await readRelease(currentKit);
 let kit;
-const app = await appRoot();
 const provenance = new Map();
 const transforms = new Map();
 function target(relative) {
@@ -32,7 +31,7 @@ async function copy(source, relative, label) {
   const dest = target(relative);
   await fs.mkdir(path.dirname(dest), { recursive: true });
   let bytes = await fs.readFile(source);
-  if (!relative.startsWith('02-logos/pwa/') && /\.(md|txt|css|json|svg|webmanifest)$/i.test(source)) {
+  if (/\.(md|txt|css|json|svg)$/i.test(source)) {
     bytes = Buffer.from(bytes.toString('utf8').replace(/\r\n/g, '\n'));
     transforms.set(relative, 'lf');
   }
@@ -43,12 +42,10 @@ async function copy(source, relative, label) {
 const originalNames = ['d54017bf-565f-49e0-8192-bd0f47bfc050.png','spritesmeli1.png','spritesmeli2.png',
   'Image Aug 19, 2026, 01_47_20 AM (1).png', ...[2,3,4,5].map(i => `Image Aug 19, 2026, 01_47_21 AM (${i}).png`)];
 const documentNames = ['gatopago-rebranding-maestro-2026.md','gatopago-plan-marca-experiencia-2026.md','gatopago_nueva_narrativa_contexto_completo_2026-08-18.txt'];
-const pwaNames = ['icon-192.png','icon-512.png','apple-touch-icon.png','manifest.webmanifest'];
 const required = [
   ...documentNames.map(name=>path.join(root,'estrategia/vigente',name)),
   path.join(root,'herramientas/brandkit/catalogo.html'),
   ...originalNames.map(name=>path.join(currentKit,'06-originales',name)),
-  ...pwaNames.map(name=>path.join(app ? path.join(app,'client/public') : path.join(currentKit,'02-logos/pwa'),name)),
   ...['README.md','CONTROL-DE-CALIDAD.md','02-logos/modelo/simbolo.txt','02-logos/modelo/simbolo-16.txt','03-personaje/README.md','03-personaje/animaciones/manifest.json','04-tipografia/recursive/full.css','04-tipografia/recursive/LICENSE.txt','05-colores/tokens.json','08-imagenes/open-graph/og.png'].map(name=>path.join(currentKit,name)),
 ];
 const missing = [];
@@ -79,15 +76,12 @@ work = await fs.mkdtemp(path.join(root,'.brandkit-work-'));
 kit = path.join(work,'staged');
 await fs.cp(currentKit,kit,{recursive:true});
 
-// Symbol and web icons: generated from the approved pixel maps (02-logos/modelo), not copied from the landing.
+// Symbol and web icons: generated from the approved pixel maps (02-logos/modelo).
 for (const [relative, bytes] of Object.entries(await symbolFiles(
   await fs.readFile(target('02-logos/modelo/simbolo.txt'), 'utf8'), await fs.readFile(target('02-logos/modelo/simbolo-16.txt'), 'utf8')))) {
   await write(relative, bytes);
 }
-if (app) for (const name of pwaNames) {
-  await copy(path.join(app, 'client/public', name), `02-logos/pwa/${name}`, `app/client/public/${name}`);
-}
-// PWA defaults, originals, the character brief and licensed font files are canonical in Git.
+// Originals, the character brief and licensed font files are canonical in Git.
 // descartado/ keeps retired work (the 2026-09 mascot); it is inventoried but never shipped in the delivery ZIP.
 const character = JSON.parse(await fs.readFile(target('03-personaje/animaciones/manifest.json'), 'utf8'));
 const exports = await characterExports(kit,character);
@@ -118,7 +112,7 @@ const color = n => colors.find(c=>c.name===n);
 const pairs = [['ink','milk'],['ink','cat-fire'],['milk','ink'],['milk','cat-fire'],['cat-shadow','milk']];
 const contrast = pairs.map(([fg,bg])=> { const a=luminance(color(fg).rgb), b=luminance(color(bg).rgb); const ratio=(Math.max(a,b)+.05)/(Math.min(a,b)+.05); return {foreground:fg,background:bg,ratio:Number(ratio.toFixed(2)),normalTextAA:ratio>=4.5,largeTextAA:ratio>=3}; });
 await write('05-colores/contraste.json', JSON.stringify(contrast,null,2)+'\n');
-await write('05-colores/README.md', `# Paleta de GatoPago\n\nLa fuente editable es [tokens.json](./tokens.json). Se conservan los valores de la identidad existente, sin depender del código de un frontend. [tokens.css](./tokens.css), CSV, GPL y contraste se regeneran desde ese JSON. Los nombres internos \`--meli-*\` se mantienen por compatibilidad; no son nombres públicos de producto. Los colores semánticos identifican estados; no son acentos intercambiables.\n\n| Token | HEX | RGB |\n|---|---|---|\n${colors.map(c=>`| ${c.name} | ${c.hex} | ${c.rgb.join(', ')} |`).join('\n')}\n\n## Contraste calculado\n\n| Texto / fondo | Ratio | AA texto normal |\n|---|---:|---|\n${contrast.map(c=>`| ${c.foreground} / ${c.background} | ${c.ratio}:1 | ${c.normalTextAA?'Sí':'No'} |`).join('\n')}\n\nNo son colores Pantone ni una conversión CMYK aprobada para imprenta. \`tokens-app.json\` conserva una referencia histórica de la app, no su configuración actual. Verificar cada aplicación en su propio repositorio.\n`);
+await write('05-colores/README.md', `# Paleta de GatoPago\n\nLa fuente editable es [tokens.json](./tokens.json). Se conservan los valores de la identidad existente, sin depender del código de un frontend. [tokens.css](./tokens.css), CSV, GPL y contraste se regeneran desde ese JSON. Los nombres internos \`--meli-*\` se mantienen por compatibilidad; no son nombres públicos de producto. Los colores semánticos identifican estados; no son acentos intercambiables.\n\n| Token | HEX | RGB |\n|---|---|---|\n${colors.map(c=>`| ${c.name} | ${c.hex} | ${c.rgb.join(', ')} |`).join('\n')}\n\n## Contraste calculado\n\n| Texto / fondo | Ratio | AA texto normal |\n|---|---:|---|\n${contrast.map(c=>`| ${c.foreground} / ${c.background} | ${c.ratio}:1 | ${c.normalTextAA?'Sí':'No'} |`).join('\n')}\n\nNo son colores Pantone ni una conversión CMYK aprobada para imprenta.\n`);
 
 const template = (await fs.readFile(path.join(root, 'herramientas/brandkit/catalogo.html'), 'utf8')).replace(/\r\n/g,'\n');
 const colorHtml = colors.map(c=>`<article class="swatch"><div style="background:${c.hex}"></div><h3>${c.name}</h3><code>${c.hex}</code><small>RGB ${c.rgb.join(' · ')}</small></article>`).join('');
@@ -131,7 +125,7 @@ for (const file of await files(kit)) {
   const relative = slash(path.relative(kit,file));
   if (['manifest.json','CONTROL-DE-CALIDAD.md'].includes(relative)) continue;
   const buffer = await fs.readFile(file);
-  const canonical = ['02-logos/modelo/','02-logos/pwa/','03-personaje/','04-tipografia/recursive/','05-colores/tokens.json','06-originales/','08-imagenes/open-graph/','descartado/'].some(prefix=>relative.startsWith(prefix));
+  const canonical = ['02-logos/modelo/','03-personaje/','04-tipografia/recursive/','05-colores/tokens.json','06-originales/','08-imagenes/open-graph/','descartado/'].some(prefix=>relative.startsWith(prefix));
   const row = {path:relative,bytes:buffer.length,sha256:crypto.createHash('sha256').update(buffer).digest('hex'),source:canonical?'brandkit canonical':provenance.get(relative)||'brandkit editorial / generated'};
   row.status = statusOf(relative,release);
   if(transforms.has(relative)) row.transform=transforms.get(relative);
@@ -142,7 +136,7 @@ for (const file of await files(kit)) {
   inventory.push(row);
 }
 await write('manifest.json', JSON.stringify({schemaVersion:2,profile:'repository',brand:'GatoPago',edition:'2026-09-28',version:release.version,copyPolicy:'Raster images from other sources are copied byte-for-byte; derived text and SVG snapshots use LF. Canonical kit sources are versioned in Git. descartado/ holds retired work and is excluded from the delivery ZIP.',files:inventory},null,2)+'\n');
-const result = await verifyKit(kit,{sourceRoot:root,app});
+const result = await verifyKit(kit,{sourceRoot:root});
 if(result.failures.length) throw new Error(`Staged kit failed validation:\n${result.failures.join('\n')}`);
 if(initialFingerprint !== await fingerprint(currentKit)) throw new Error('Canonical kit changed during build; refusing replacement');
 const previous = path.join(work,'previous');

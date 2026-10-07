@@ -3,12 +3,12 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { fileURLToPath, pathToFileURL } from 'node:url';
+import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import { unzipSync } from 'fflate';
 import sharp from 'sharp';
 import { readRelease, statusOf, approvedAssets } from './release.mjs';
-import { files, inside, removeWorkdir } from './paths.mjs';
+import { inside, removeWorkdir } from './paths.mjs';
 import { verifyKit } from '../verify-brandkit.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
@@ -19,7 +19,7 @@ test('release policy separates baseline, reviews, references and retired work',a
   const release=await readRelease(kit);
   assert.equal(release.version,'1.0.0-rc.1');
   assert.equal(release.approval.newAssetsApproved,false);
-  for(const [name,status] of Object.entries({'02-logos/simbolo/gatopago.svg':'approved-baseline','02-logos/horizontal/gatopago-claro.svg':'review','03-personaje/qa/review.png':'review','09-componentes/index.html':'review','10-plantillas/index.html':'review','06-originales/spritesmeli1.png':'reference','02-logos/pwa/manifest.webmanifest':'reference','descartado/example.svg':'retired','01-manual/identidad-y-voz.md':'internal'})) assert.equal(statusOf(name,release),status);
+  for(const [name,status] of Object.entries({'02-logos/simbolo/gatopago.svg':'approved-baseline','02-logos/horizontal/gatopago-claro.svg':'review','03-personaje/qa/review.png':'review','09-componentes/index.html':'review','10-plantillas/index.html':'review','06-originales/spritesmeli1.png':'reference','07-referencias/README.md':'reference','descartado/example.svg':'retired','01-manual/identidad-y-voz.md':'internal'})) assert.equal(statusOf(name,release),status);
   const rows=approvedAssets((await JSON.parse(await fs.readFile(path.join(kit,'manifest.json'),'utf8'))).files,release);
   assert.ok(rows.length>10);
   assert.ok(rows.every(row=>!row.path.endsWith('.md')));
@@ -78,33 +78,3 @@ test('external delivery is independently readable and excludes all review materi
   } finally { await removeWorkdir(root,work); }
 });
 
-test('npm asset tarball is local, private and exports complete baseline font paths',async()=>{
-  const result=spawnSync(process.execPath,[path.join(root,'herramientas/package-frontend.mjs')],{cwd:root,encoding:'utf8',maxBuffer:3_000_000});
-  assert.equal(result.status,0,result.stderr+'\n'+result.stdout);
-  const report=JSON.parse(result.stdout);
-  assert.equal(report.published,false);
-  assert.equal(report.frontendModified,false);
-  const work=await fs.mkdtemp(path.join(root,'.brandkit-work-'));
-  try {
-    // Git Bash puts GNU tar first in PATH, and it reads "C:\..." as a remote host.
-    const tar=process.platform==='win32'?path.join(process.env.SystemRoot??'C:\\Windows','System32','tar.exe'):'tar';
-    const extracted=spawnSync(tar,['-xzf',report.tarball,'-C',work],{encoding:'utf8',windowsHide:true});
-    assert.equal(extracted.status,0,extracted.stderr);
-    const pkg=JSON.parse(await fs.readFile(path.join(work,'package/package.json'),'utf8'));
-    assert.equal(pkg.name,'@gatopago/brand-assets');
-    assert.equal(pkg.private,true);
-    assert.equal(pkg.scripts,undefined);
-    assert.equal(pkg.dependencies,undefined);
-    const delivery=JSON.parse(await fs.readFile(path.join(work,'package/asset-manifest.json'),'utf8'));
-    for(const row of delivery.files) assert.equal(sha(await fs.readFile(inside(path.join(work,'package'),row.path))),row.sha256);
-    for(const file of await files(path.join(work,'package'))) assert.doesNotMatch(file,/[\\/](?:03-personaje|qa|09-componentes|10-plantillas|descartado)[\\/]/);
-    for(const cssFile of ['assets/04-tipografia/uso.css','assets/04-tipografia/recursive/full.css']) {
-      const owner=inside(path.join(work,'package'),cssFile);
-      const css=await fs.readFile(owner,'utf8');
-      for(const match of css.matchAll(/url\(['"]?([^)'"\s]+)['"]?\)/g)) await fs.access(path.resolve(path.dirname(owner),match[1]));
-    }
-    const imported=await import(pathToFileURL(inside(path.join(work,'package'),'index.js')).href);
-    assert.equal(imported.version,'1.0.0-rc.1');
-    assert.ok(imported.assetPaths.length>10);
-  } finally { await removeWorkdir(root,work); }
-});

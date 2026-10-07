@@ -68,8 +68,6 @@ Las [20 propuestas de animación](../03-personaje/galeria.html#animaciones) se i
 - la galería permite pausar todas las previews y respeta `prefers-reduced-motion`; en producto, acompañar la alternativa estática con un estado en texto;
 - la aprobación artística es humana: cada secuencia se revisa en su contexto final y a su tamaño real.
 
-## Descargas y PWA
+## Descargas
 
 Los comprobantes y QR descargables necesitan el mismo vocabulario visual, pero los datos son prioritarios: contraste, quiet zone del QR, no deformación, identificador y estado verificable. Probar lectura del QR y legibilidad del export; no colocar el gato encima de módulos codificados.
-
-Los iconos PWA incluidos son una copia de los existentes en la app. El manifiesto es una referencia, no un manifiesto instalable desde esta carpeta: sus rutas pertenecen a la aplicación original. Nombre, descripción e iconos deben validarse en una instalación real antes de anunciar una actualización PWA.

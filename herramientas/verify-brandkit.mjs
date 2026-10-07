@@ -4,14 +4,14 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
-import { appRoot, argument, files, inside, slash } from './brandkit/paths.mjs';
+import { argument, files, inside, slash } from './brandkit/paths.mjs';
 import { PALETTE } from './brandkit/pixmap.mjs';
 import { readRelease, statusOf } from './brandkit/release.mjs';
 
 // Do not retain native file handles to a staged kit during replacement on Windows.
 sharp.cache(false);
 
-export async function verifyKit(kit, { sourceRoot = null, app = null } = {}) {
+export async function verifyKit(kit, { sourceRoot = null } = {}) {
 const hash = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const inventory = JSON.parse(await fs.readFile(path.join(kit, 'manifest.json'), 'utf8'));
 const failures = [];
@@ -31,7 +31,7 @@ for (const row of inventory.files) {
   const bytes = await fs.readFile(file);
   assert(hash(bytes) === row.sha256, `Hash mismatch: ${row.path}`);
   assert(bytes.length === row.bytes, `Size mismatch: ${row.path}`);
-  const source = sourceRoot && row.source.startsWith('repository/') ? inside(sourceRoot,row.source.slice(11)) : app && row.path.startsWith('02-logos/pwa/') ? inside(app,`client/public/${path.basename(row.path)}`) : null;
+  const source = sourceRoot && row.source.startsWith('repository/') ? inside(sourceRoot,row.source.slice(11)) : null;
   if (source) {
     let original = await fs.readFile(source);
     if (row.transform === 'lf') original = Buffer.from(original.toString('utf8').replace(/\r\n/g,'\n'));
@@ -190,8 +190,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.a
   try {
     const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
     const result = await verifyKit(path.resolve(argument('--kit', path.join(root,'brandkit'))), {
-      sourceRoot: process.argv.includes('--sources') ? root : null,
-      app: await appRoot(),
+      sourceRoot: process.argv.includes('--sources') ? root : null
     });
     console.log(JSON.stringify(result,null,2));
     if(result.failures.length) process.exitCode=1;

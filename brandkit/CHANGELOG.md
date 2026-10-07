@@ -1,5 +1,11 @@
 # Historial del brandkit
 
+## Retirada de la app — 2026-10-07
+
+- El kit deja de reflejar o alimentar la app: se retiran `01-manual/producto-app.md`, `01-manual/integracion-frontend.md`, `02-logos/pwa/` (snapshot de iconos y manifiesto) y `05-colores/tokens-app.json`.
+- Las variantes de estado sobre fondo claro (AA sobre Milk) pasan a [sistema visual](./01-manual/sistema-visual.md); son de marca, no de la app.
+- Se eliminan el paquete npm `@gatopago/brand-assets` (`brandkit:frontend`) y la opción `--app-dir` de build y verificación. La app toma los recursos de las entregas ZIP.
+
 ## Revisión local — 2026-10-07
 
 - Caminata: descartados los ensayos de recoloreado y reordenación. Se conserva la secuencia original de seis fotogramas, sin alterar dibujo, sombras, colores ni transparencias.

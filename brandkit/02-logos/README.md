@@ -7,7 +7,6 @@ Edición 2026-09-25 · Símbolo reconstruido como pixel art; favicons generados 
 | `modelo/` | [simbolo.txt](./modelo/simbolo.txt) (30 × 23) y [simbolo-16.txt](./modelo/simbolo-16.txt) (16 × 16) | **Fuente editable**. Un carácter por bloque: `#` Ink, `o` Cat Fire, `s` Cat Shadow, `.` transparente |
 | `simbolo/` | [gatopago.svg](./simbolo/gatopago.svg), [gatopago-16.svg](./simbolo/gatopago-16.svg), [gatopago.png](./simbolo/gatopago.png) (×8) | Símbolo principal, fondo transparente |
 | `iconos-web/` | `favicon.svg`, `favicon.ico` (16/32/48), PNG 16/32/48 y `apple-touch-icon.png` | Identidad del sitio |
-| `pwa/` | PNG 192/512, Apple touch icon y manifiesto de la app | Snapshot de instalación de la aplicación (pendiente de rehacer) |
 | [horizontal/](./horizontal/README.md) | Cuatro wordmarks SVG trazados y PNG | Propuestas pendientes de aprobación |
 | [variantes/](./variantes/index.html) | Monocromáticas Ink, Milk y Cat Fire, y variante oscura | Propuestas; no sustituyen el símbolo principal |
 
@@ -41,6 +40,3 @@ El [catálogo principal](../index.html#logo) conserva la composición de base co
 
 [08-imagenes/avatar](../08-imagenes/avatar/README.md) contiene el mismo símbolo sobre Milk, como el apple-touch-icon: SVG con fondo y siete PNG cuadrados, de 180 a 2160 px. El de 180 es idéntico visualmente al apple-touch-icon; los tamaños de 1080 y 2160 conservan exactamente su composición. Los archivos son cuadrados y opacos; el margen protege las orejas y los bigotes al mostrarlos en un círculo.
 
-## PWA
-
-`pwa/` sigue siendo el snapshot de la app: la cabeza original, transparente y ligeramente descentrada. Su manifiesto conserva las rutas de la aplicación; sirve de referencia y no debe instalarse desde esta carpeta. Solo se refresca desde la app con `--app-dir`. La versión nueva (fondo Milk, iconos `maskable`, símbolo centrado) está pendiente. También está pendiente en la app la `description` del manifiesto: todavía dice «Tus dólares ya saben moverse», sustituida el 3 de octubre de 2026 por «Dinero sin fronteras. Siempre tuyo.». Se corrige en `gatopago/gatopago` y después se refresca aquí con `--app-dir`.

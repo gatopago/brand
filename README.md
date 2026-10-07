@@ -34,8 +34,7 @@ No contiene código de frontend, servidor web ni configuración de despliegue (l
 │   ├── brandkit/                Generadores de personaje, piezas sociales, release y tests
 │   ├── build-brandkit.mjs       Compilación determinista del kit
 │   ├── verify-brandkit.mjs      Verificación estricta de inventario y hashes
-│   ├── package-brandkit.mjs     Empaquetado de ZIP interno y externo
-│   └── package-frontend.mjs     Generación de tarball @gatopago/brand-assets
+│   └── package-brandkit.mjs     Empaquetado de ZIP interno y externo
 │
 └── output/                      Entregas locales (ignorado por Git)
 ```
@@ -51,7 +50,6 @@ npm run brandkit:verify -- --sources  # Valida inventario, hashes y coincidencia
 npm run brandkit:test           # Ejecuta suite completa de pruebas unitarias
 npm run brandkit:zip            # Genera ZIP interno para el equipo
 npm run brandkit:external       # Genera ZIP externo sin material en revisión
-npm run brandkit:frontend       # Genera tarball local @gatopago/brand-assets
 ```
 
 La candidata actual es **1.0.0-rc.1**.  

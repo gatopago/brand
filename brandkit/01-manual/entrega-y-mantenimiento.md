@@ -9,7 +9,6 @@ Versión 1.0.0-rc.1 · Preparación 2026-10-02 · Fuentes versionadas y generaci
 | Símbolo y favicons | Fuente versionada: mapas en `brandkit/02-logos/modelo/`; el build genera el SVG, los PNG, el ICO y el apple-touch-icon |
 | Nuevos wordmarks y variantes | Recetas en `herramientas/brandkit/design-files.mjs`, mapa del símbolo y Recursive WOFF2 local; propuestas en revisión |
 | Componentes y plantillas | Recetas en `herramientas/brandkit/design-files.mjs`; copy social editable en `brandkit/10-plantillas/modelo.json`; HTML, SVG trazados y previews se regeneran desde ahí |
-| Iconos PWA y manifiesto | Fuente versionada: `brandkit/02-logos/pwa/`; actualización desde la app solo con `--app-dir` |
 | Personaje | Propuestas para revisión en `brandkit/03-personaje/`, generadas desde `06-originales/`. El arte final sigue pendiente. El trabajo retirado está en `brandkit/descartado/`, fuera del ZIP |
 | Dibujos originales | Fuente única versionada: `brandkit/06-originales/`; sin duplicados en la raíz |
 | Fuente tipográfica | Fuente versionada: `brandkit/04-tipografia/recursive/`, con licencia y versión de origen |
@@ -46,7 +45,6 @@ npm run brandkit:verify -- --sources
 npm run brandkit:test
 npm run brandkit:zip
 npm run brandkit:external
-npm run brandkit:frontend
 ```
 
 `npm ci` instala las dependencias fijadas en el lockfile. Ignorar `node_modules/` es correcto; no se requiere versionarlo. La tipografía del kit se toma de su carpeta canónica. Sharp procesa imágenes, fflate empaqueta ZIP, fontkit/wawoff2 convierten el WOFF2 local en contornos y qrcode genera el ejemplo de QR. No se requiere Astro, Tailwind ni un paquete de fuentes. La descompresión de la fuente sucede en memoria; no se entrega un nuevo TTF/OTF.
@@ -55,8 +53,7 @@ npm run brandkit:frontend
 2. Ejecutar el build. Primero comprueba entradas y rechaza enlaces simbólicos; después prepara y valida una copia temporal. Solo tras la validación sustituye el kit, con restauración del anterior si falla el intercambio. Un error de entrada o generación no sobrescribe el kit actual.
 3. `brandkit:verify` comprueba inventario exacto, hashes, enlaces y fuentes locales sin consultar fuentes externas. En el símbolo y los favicons exige pixel art exacto: cada archivo idéntico a su mapa, solo colores de la paleta. En las propuestas del personaje verifica 14 estáticos, 20 secuencias, lienzos, fotogramas, versiones HD, hojas y tiempos WebP. En los avatares verifica fondo opaco, símbolo y margen circular. También admite `--kit <carpeta>` para validar un paquete extraído fuera del checkout.
 4. `brandkit:verify -- --sources` añade la comparación de los snapshots con `estrategia/`. Es opcional, no una dependencia del paquete entregado.
-5. Para refrescar únicamente los iconos PWA desde otra app: `npm run brandkit:build -- --app-dir <ruta-app>`. Para compararlos sin modificarlos: `npm run brandkit:verify -- --app-dir <ruta-app>`. La variable ambiental antigua ya no controla el proceso.
-6. Revisar y aprobar cualquier retirada de assets. El build no elimina recursos canónicos por considerarlos sobrantes.
+5. Revisar y aprobar cualquier retirada de assets. El build no elimina recursos canónicos por considerarlos sobrantes.
 
 No borres `brandkit/` para regenerarlo: contiene fuentes versionadas. Si falta un original, recupera el archivo correspondiente desde Git. Los tests cubren entradas ausentes, fallos posteriores al preflight, builds idénticos, fuentes CRLF y LF, el ZIP sin material retirado y la conservación del ZIP previo cuando falla una validación.
 
@@ -74,22 +71,18 @@ primero todo el kit de origen, incluidos sus píxeles; el ZIP externo se verific
 inventario, hashes, política y enlaces, sin atribuirle las pruebas de personaje ausente.
 No equivale a autorización para publicarlo ni a una licencia sobre la marca.
 
-El paquete `@gatopago/brand-assets` se genera con `brandkit:frontend` en
-`output/frontend/`. Es un tarball local privado, no una publicación npm. Solo lleva
-la misma base vigente y no modifica el frontend. Ver [integración](./integracion-frontend.md).
-
 El template editable del catálogo es `herramientas/brandkit/catalogo.html`; el de la galería, `herramientas/brandkit/galeria-personaje.mjs`. Los exports HD y los avatares se generan con `exportaciones-personaje.mjs` y `avatar.mjs`. No se recrea el ZIP duplicado del personaje retirado del kit: sus archivos están incluidos directamente en el ZIP general de `output/`. Los manuales cortos dentro de `01-manual/` se editan directamente; no los sobreescribe el generador. Para actualizar los recortes, ejecutar `brandkit:personaje` antes del build. Ese paso usa una carpeta temporal y no sustituye la entrega si falla la generación.
 
 ## Repositorio de marca
 
-Desde el 1 de octubre de 2026 este checkout almacena identidad, recursos y estrategia, no una landing. La app y la landing viven en el frontend unificado. Los WebP de la landing anterior quedan en `descartado/mascota-2026-09/qa/antes/estaticos/` (la copia de `archivo/personaje-web/` se retiró el 7 de octubre de 2026), la portada en `contenido/plantillas/` y las presentaciones en `comercial/pitch/`, sin cambios artísticos.
+Desde el 1 de octubre de 2026 este checkout almacena identidad, recursos y estrategia, no una landing ni una app. El kit no sincroniza ni empaqueta nada para el frontend: la app y la landing viven en su propio repositorio y toman los recursos de las entregas de `output/`. Los WebP de la landing anterior quedan en `descartado/mascota-2026-09/qa/antes/estaticos/` (la copia de `archivo/personaje-web/` se retiró el 7 de octubre de 2026), la portada en `contenido/plantillas/` y las presentaciones en `comercial/pitch/`, sin cambios artísticos.
 
 ## Límites de esta edición
 
 - No restaura los assets sociales borrados previamente en el árbol de trabajo.
 - Los wordmarks trazados y logos monocromáticos son propuestas nuevas en revisión. No se entregan conversiones CMYK/Pantone certificadas.
 - Incluye fuentes WOFF2 para web, no una distribución TTF/OTF de escritorio.
-- No prueba ejecución financiera, disponibilidad comercial ni instalación PWA.
+- No prueba ejecución financiera ni disponibilidad comercial.
 - No elimina originales canónicos: los duplicados de la raíz se retiraron tras verificar sus hashes.
 - No implementa el kit en pantallas.
 - Incluye ilustraciones y animaciones del personaje como propuestas de revisión, sin aprobación artística ni certificación de pixel art ([03-personaje](../03-personaje/README.md)). La versión anterior de septiembre de 2026 se retiró a `descartado/`.
