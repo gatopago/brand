@@ -6,10 +6,12 @@ Los decks vigentes se editan y presentan en claude.ai (tipo Slides). Esta carpet
 |---|---|---|---|
 | GatoPago · Pitch deck (ES) | Deck general: inversión, aceleradoras y alianzas. 16 diapositivas, la última es un anexo técnico | [Abrir](https://claude.ai/artifact/8BegsYdMZ9U6KoFhQNpgWY) | [`deck-es/`](./deck-es/deck.json) |
 | GatoPago · Pitch deck (EN) | Versión para fondos de ecosistema (Arbitrum). Narrativa B2B2C, 12 diapositivas | [Abrir](https://claude.ai/artifact/SFd4vYskkZQp2wzhsoF46M) | [`deck-en/`](./deck-en/deck.json) |
+| GatoPago · Pitch deck (Google Slides) | Copia del deck en español para exportar a Google Slides: usa Recursive de Google Fonts en lugar de las fuentes propias. Mismo contenido; se regenera desde `deck-es/` | [Abrir](https://claude.ai/artifact/NF6P8HvkWb7f6L8Dt82Loe) | Derivada de `deck-es/` |
 
 - El deck en inglés **no es una traducción** del español: cuenta la historia B2B2C («the self-custodial dollar account that companies give their customers») y está pensado para Arbitrum.
 - [Guion](./gatopago-pitch-deck-guion-2026-10-03.md): estructura y textos del deck en español. Si el guion, el deck y la [narrativa](../../estrategia/vigente/gatopago-narrativa-2026-10.md) discrepan, manda la narrativa.
 - Las imágenes y fuentes de los decks son archivos subidos a claude.ai (`/_blob/…`); proceden del brandkit. Las diapositivas de esta carpeta no se ven solas: son la fuente, no una exportación.
+- Las cuatro fuentes de los decks (GatoPago Display, Text, Strong y Mono) son versiones fijas de Recursive con pesos 760, 460, 680 y 620 (Mono, monoespaciada). Google Slides no las reconoce y pone Verdana: para Google Slides usar la copia de arriba.
 - Para tener PDF o PPTX: en el deck, Compartir › Exportar. Guardarlos aquí como `gatopago-pitch-deck-AAAA-MM-es.pdf` y `…-en.pdf`.
 - Los decks anteriores a la narrativa de octubre (v1 y v2, con sus fuentes y fondos) están en [`archivo/comercial/pitch-anterior/`](../../archivo/comercial/pitch-anterior/LEEME.txt). Registro, no se presentan.
 
