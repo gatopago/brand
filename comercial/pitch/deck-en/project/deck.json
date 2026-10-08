@@ -1,0 +1,22 @@
+{
+  "v": 4,
+  "createdOnFiles": { "v": 1, "at": "2026-10-04T15:00:00Z" },
+  "lists": "css",
+  "title": "GatoPago · Pitch deck (EN)",
+  "cover": "cover",
+  "order": ["cover", "problem", "choice", "solution", "today", "b2b2c", "traction", "bolivia", "model", "underhood", "next", "close"],
+  "sections": {
+    "intro": { "description": "Who we are and the promise", "start": "cover" },
+    "problem": { "description": "Real demand, and the gap nobody fills", "start": "problem" },
+    "product": { "description": "GatoPago in the gap, and it already works", "start": "solution" },
+    "business": { "description": "How we grow, traction, market and model", "start": "b2b2c" },
+    "close": { "description": "Tech, next steps and the close", "start": "underhood" }
+  },
+  "faces": {
+    "gatopago-display": { "family": "GatoPago Display", "src": "/_blob/be6a53276c5a9c4fcf6980b0c5541f69" },
+    "gatopago-text": { "family": "GatoPago Text", "src": "/_blob/9d676fb3b23c0f1c975fd4791dac58b4" },
+    "gatopago-strong": { "family": "GatoPago Strong", "src": "/_blob/2b0d4f54de87f039cb7332b6e424bbd5" },
+    "gatopago-mono": { "family": "GatoPago Mono", "src": "/_blob/97482ef59460d4eea9de2b07034d9b8a" }
+  },
+  "designSystems": []
+}

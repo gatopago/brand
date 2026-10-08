@@ -1,0 +1,23 @@
+{
+  "v": 4,
+  "createdOnFiles": { "v": 1, "at": "2026-10-03T14:35:00Z" },
+  "lists": "css",
+  "title": "GatoPago · Pitch deck",
+  "cover": "cover",
+  "order": ["cover", "problema", "momentos", "elegir", "solucion", "como", "producto", "defi", "abierta", "bolivia", "negocio", "competencia", "hitos", "equipo", "cierre", "anexo"],
+  "sections": {
+    "intro": { "description": "Portada y promesa", "start": "cover" },
+    "problema": { "description": "El problema y por qué cripto todavía no basta", "start": "problema" },
+    "solucion": { "description": "Qué es GatoPago, cómo se usa y qué funciona hoy", "start": "solucion" },
+    "negocio": { "description": "Dónde empezamos, modelo, competencia e hitos", "start": "bolivia" },
+    "cierre": { "description": "Equipo, petición y cierre", "start": "equipo" },
+    "anexo": { "description": "Anexo técnico para fondos de blockchains", "start": "anexo" }
+  },
+  "faces": {
+    "gatopago-display": { "family": "GatoPago Display", "src": "/_blob/78e3fab38ba189e1fa92ffe781a997cc" },
+    "gatopago-text": { "family": "GatoPago Text", "src": "/_blob/68cef2f0c9889ae4c19f6883132d9a0d" },
+    "gatopago-strong": { "family": "GatoPago Strong", "src": "/_blob/eff35750896c3018fdcea352eaaa7bfc" },
+    "gatopago-mono": { "family": "GatoPago Mono", "src": "/_blob/48d57b01856a8870fed0431624816cf1" }
+  },
+  "designSystems": []
+}

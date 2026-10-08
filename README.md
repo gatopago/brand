@@ -16,7 +16,7 @@ No contiene código de frontend, servidor web ni configuración de despliegue (l
 │   └── auditorias/              Auditoría de marca y recomendaciones de diseño
 │
 ├── comercial/                   VENTAS, CAPITAL Y ALIANZAS
-│   ├── pitch/                   Guion del pitch deck y decks anteriores (v2 editable, PDF)
+│   ├── pitch/                   Decks vigentes ES/EN (fuente de claude.ai), guion y decks anteriores
 │   ├── grants/                  Plantilla, convocatorias y bases de referencia
 │   ├── partners/                Propuestas y one-pagers para aliados comerciales
 │   └── data-room/               Índice para due diligence (sin datos sensibles)
