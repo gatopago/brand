@@ -15,7 +15,7 @@ Leyenda: **Listo** · **Borrador** · **Falta**
 | Área | Documento | Estado | Dónde |
 |---|---|---|---|
 | Resumen | One-pager | Borrador (falta contacto) | [gatopago-one-pager-2026-10.pdf](../partners/gatopago-one-pager-2026-10.pdf) |
-| Resumen | Pitch deck | Borrador (faltan capturas, equipo y petición) | Página privada «GatoPago · Pitch deck» en claude.ai; exportar a [`pitch/propuestas/`](../pitch/propuestas/) |
+| Resumen | Pitch deck | Borrador (faltan capturas, equipo y petición) | Decks en claude.ai (español e inglés), índice y fuente en [`pitch/`](../pitch/README.md); los PDF exportados van ahí |
 | Narrativa | Problema, tesis y promesa | Listo | [narrativa 2026-10](../../estrategia/vigente/gatopago-narrativa-2026-10.md) |
 | Mercado | Datos de Bolivia con fuentes | Listo (repetir antes de presentar) | [bolivia-datos-2026-10](../../estrategia/investigacion/bolivia-datos-2026-10.md) |
 | Mercado | Validación con usuarios | Falta (guion listo) | [guion de entrevistas](../../estrategia/investigacion/guion-entrevistas-2026-10.md) |

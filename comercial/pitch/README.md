@@ -1,17 +1,17 @@
 # Pitch
 
-Los decks vigentes se editan y presentan en claude.ai (tipo Slides). Esta carpeta guarda su **fuente versionada**: el índice y una página HTML por diapositiva, con las notas del orador en el `<aside>` de cada una.
+Los decks vigentes se editan y presentan en claude.ai (tipo Slides). Esta carpeta guarda su **fuente versionada**: el índice (`deck.json`) y una página HTML por diapositiva en `slides/` (en claude.ai viven bajo `project/`), con las notas del orador en el `<aside>` de cada una.
 
 | Deck | Para qué | En claude.ai | Fuente en el repo |
 |---|---|---|---|
-| GatoPago · Pitch deck (ES) | Deck general: inversión, aceleradoras y alianzas. 16 diapositivas, la última es un anexo técnico | [Abrir](https://claude.ai/artifact/8BegsYdMZ9U6KoFhQNpgWY) | [`deck-es/`](./deck-es/project/deck.json) |
-| GatoPago · Pitch deck (EN) | Versión para fondos de ecosistema (Arbitrum). Narrativa B2B2C, 12 diapositivas | [Abrir](https://claude.ai/artifact/SFd4vYskkZQp2wzhsoF46M) | [`deck-en/`](./deck-en/project/deck.json) |
+| GatoPago · Pitch deck (ES) | Deck general: inversión, aceleradoras y alianzas. 16 diapositivas, la última es un anexo técnico | [Abrir](https://claude.ai/artifact/8BegsYdMZ9U6KoFhQNpgWY) | [`deck-es/`](./deck-es/deck.json) |
+| GatoPago · Pitch deck (EN) | Versión para fondos de ecosistema (Arbitrum). Narrativa B2B2C, 12 diapositivas | [Abrir](https://claude.ai/artifact/SFd4vYskkZQp2wzhsoF46M) | [`deck-en/`](./deck-en/deck.json) |
 
 - El deck en inglés **no es una traducción** del español: cuenta la historia B2B2C («the self-custodial dollar account that companies give their customers») y está pensado para Arbitrum.
 - [Guion](./gatopago-pitch-deck-guion-2026-10-03.md): estructura y textos del deck en español. Si el guion, el deck y la [narrativa](../../estrategia/vigente/gatopago-narrativa-2026-10.md) discrepan, manda la narrativa.
 - Las imágenes y fuentes de los decks son archivos subidos a claude.ai (`/_blob/…`); proceden del brandkit. Las diapositivas de esta carpeta no se ven solas: son la fuente, no una exportación.
 - Para tener PDF o PPTX: en el deck, Compartir › Exportar. Guardarlos aquí como `gatopago-pitch-deck-AAAA-MM-es.pdf` y `…-en.pdf`.
-- [`propuestas/`](./propuestas/LEEME.txt): decks anteriores a la narrativa de octubre. Registro, no se presentan.
+- Los decks anteriores a la narrativa de octubre (v1 y v2, con sus fuentes y fondos) están en [`archivo/comercial/pitch-anterior/`](../../archivo/comercial/pitch-anterior/LEEME.txt). Registro, no se presentan.
 
 Copia tomada el 8 de octubre de 2026 (ES: versión del 3 de octubre; EN: versión del 4 de octubre). Si se edita un deck en claude.ai, volver a copiar su fuente aquí.
 

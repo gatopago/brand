@@ -9,6 +9,8 @@ Material archivado para consulta y registro técnico. **No se utiliza en piezas 
   - Conservado para trazabilidad artística y técnica.
 - **`estrategia/`**:
   - Documentos de estrategia anteriores y adaptaciones conservadas como registro (`modificados/`) y sus originales (`originales/`). Movido desde `estrategia/archivo/` el 7 de octubre de 2026.
+- **`comercial/pitch-anterior/`**:
+  - Decks de pitch v1 (PDF) y v2 (PPTX y PDF) anteriores a la narrativa de octubre de 2026, con sus fuentes y fondos. Movido desde `comercial/pitch/propuestas/` el 8 de octubre de 2026.
 
 ## Retirado el 7 de octubre de 2026
 

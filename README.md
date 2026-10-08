@@ -16,7 +16,7 @@ No contiene código de frontend, servidor web ni configuración de despliegue (l
 │   └── auditorias/              Auditoría de marca y recomendaciones de diseño
 │
 ├── comercial/                   VENTAS, CAPITAL Y ALIANZAS
-│   ├── pitch/                   Decks vigentes ES/EN (fuente de claude.ai), guion y decks anteriores
+│   ├── pitch/                   Decks vigentes ES/EN (fuente de claude.ai) y guion
 │   ├── grants/                  Plantilla, convocatorias y bases de referencia
 │   ├── partners/                Propuestas y one-pagers para aliados comerciales
 │   └── data-room/               Índice para due diligence (sin datos sensibles)
@@ -28,7 +28,8 @@ No contiene código de frontend, servidor web ni configuración de despliegue (l
 │
 ├── archivo/                     REGISTRO TÉCNICO E HISTÓRICO (No usar en piezas nuevas)
 │   ├── laboratorio-gatopago/    255 MB de animaciones, propuestas y rigs experimentales
-│   └── estrategia/              Documentos de estrategia anteriores y adaptaciones
+│   ├── estrategia/              Documentos de estrategia anteriores y adaptaciones
+│   └── comercial/               Decks de pitch anteriores a la narrativa de octubre
 │
 ├── herramientas/                SCRIPTS Y GENERADORES
 │   ├── brandkit/                Generadores de personaje, piezas sociales, release y tests
