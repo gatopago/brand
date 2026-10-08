@@ -1,5 +1,5 @@
 {
-  "name": "gatopago-brandkit",
+  "name": "gatopago-brand",
   "description": "Biblioteca de identidad y recursos de GatoPago, sin frontend ni despliegues.",
   "private": true,
   "type": "module",

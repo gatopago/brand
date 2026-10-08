@@ -1,6 +1,6 @@
 # GatoPago — Identidad, Estrategia y Recursos
 
-Este repositorio es la biblioteca central de marca, estrategia, activos comerciales y generadores de GatoPago.  
+Repositorio: [`gatopago/brand`](https://github.com/gatopago/brand) (privado). Este repositorio es la biblioteca central de marca, estrategia, activos comerciales y generadores de GatoPago.  
 No contiene código de frontend, servidor web ni configuración de despliegue (la app y la landing viven en el repositorio unificado `gatopago/gatopago`).
 
 ## Mapa del repositorio
@@ -13,22 +13,22 @@ No contiene código de frontend, servidor web ni configuración de despliegue (l
 │   ├── vigente/                 Narrativa 2026-10, promesa de marca, índice maestro y rebranding
 │   ├── planes/                  Planes estratégicos 2026–2030 (producto, finanzas, marketing, B2B…)
 │   ├── investigacion/           Datos de Bolivia y guion de entrevistas (benchmarks pendientes)
-│   ├── auditorias/              Auditoría de marca y recomendaciones de diseño
-│   └── archivo/                 Documentos y adaptaciones históricas
+│   └── auditorias/              Auditoría de marca y recomendaciones de diseño
 │
 ├── comercial/                   VENTAS, CAPITAL Y ALIANZAS
-│   ├── pitch/                   Guion del pitch deck y decks PPTX/PDF anteriores
+│   ├── pitch/                   Guion del pitch deck y decks anteriores (v2 editable, PDF)
 │   ├── grants/                  Plantilla, convocatorias y bases de referencia
 │   ├── partners/                Propuestas y one-pagers para aliados comerciales
 │   └── data-room/               Índice para due diligence (sin datos sensibles)
 │
 ├── contenido/                   COMUNICACIÓN Y PUBLICACIONES
 │   ├── redes/2026-10/           172 piezas sociales generadas (posts, carruseles, banners, stickers)
-│   ├── calendario/              Plan editorial y cronograma de publicación
-│   └── plantillas/              Portadas, fondos y recursos reutilizables
+│   ├── redes/portada-x/         Portada de X y su encargo
+│   └── calendario/              Plan editorial y cronograma de publicación
 │
 ├── archivo/                     REGISTRO TÉCNICO E HISTÓRICO (No usar en piezas nuevas)
-│   └── laboratorio-gatopago/    255 MB de animaciones, propuestas y rigs experimentales
+│   ├── laboratorio-gatopago/    255 MB de animaciones, propuestas y rigs experimentales
+│   └── estrategia/              Documentos de estrategia anteriores y adaptaciones
 │
 ├── herramientas/                SCRIPTS Y GENERADORES
 │   ├── brandkit/                Generadores de personaje, piezas sociales, release y tests

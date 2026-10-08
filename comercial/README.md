@@ -4,7 +4,7 @@ Material para vender, conseguir fondos y cerrar alianzas. Todo sale de la [narra
 
 | Carpeta | Contenido |
 |---|---|
-| [`pitch/`](./pitch/) | [Guion del deck](./pitch/gatopago-pitch-deck-guion-2026-10-03.md). El deck vigente es una página privada de claude.ai («GatoPago · Pitch deck»); sus exportaciones PPTX o PDF van a `pitch/propuestas/`. `originales/` y `propuestas/GatoPago_Pitch_Deck_GatoPago.*` son los decks **anteriores** a la narrativa nueva: se conservan como registro, no se presentan. |
+| [`pitch/`](./pitch/) | [Guion del deck](./pitch/gatopago-pitch-deck-guion-2026-10-03.md). El deck vigente es una página privada de claude.ai («GatoPago · Pitch deck»); sus exportaciones PPTX o PDF van a `pitch/propuestas/`. Lo que hay hoy en `propuestas/` (v2 editable y PDF de v1 y v2) es **anterior** a la narrativa nueva: se conserva como registro, no se presenta. |
 | [`partners/`](./partners/) | [One-pager](./partners/gatopago-one-pager-2026-10.pdf) en A4 (fuente editable: el `.html` del mismo nombre). |
 | [`grants/`](./grants/) | [Plantilla de solicitud](./grants/plantilla-solicitud-grant.md) y una carpeta por convocatoria. |
 | [`data-room/`](./data-room/README.md) | Índice de due diligence con el estado de cada documento. |

@@ -6,4 +6,4 @@
 
 Antes de usarlas en una campaña, comprobar nombres, importes, red, disponibilidad de funciones y coherencia con la versión vigente. No anunciar la tarjeta, cobertura internacional, rentabilidad o mainnet basándose en una imagen conceptual.
 
-La portada de X existente se conserva fuera del kit en `contenido/plantillas/`, junto con su encargo. Las presentaciones están en `comercial/pitch/`. Los archivos sociales retirados previamente no se restauran.
+La portada de X existente se conserva fuera del kit en `contenido/redes/portada-x/`, junto con su encargo. Las presentaciones están en `comercial/pitch/`. Los archivos sociales retirados previamente no se restauran.

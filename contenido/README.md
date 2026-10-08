@@ -10,9 +10,9 @@ Material preparado para comunicación pública, redes sociales, prensa y campañ
   - Catálogo interactivo local: [ver catálogo](./redes/2026-10/index.html).
 - **`calendario/`**: 
   - [Calendario de octubre y noviembre de 2026](./calendario/calendario-2026-10-11.md) (8 semanas, con CSV para herramientas de programación). Se regenera con `npm run contenido:calendario`.
-- **`plantillas/`**: 
-  - Portada de X (`gatopago-x-cover-2026-10-01-v1.png`) y su especificación / prompt.
-  - Los fondos, stickers y plantillas con captura viven en `redes/2026-10/` junto al resto de piezas.
+- **`redes/portada-x/`**: 
+  - Portada de X (`gatopago-x-cover-2026-10-01-v1.png`) y su especificación / prompt. Está fuera de `2026-10/` porque el generador social vacía esa carpeta al regenerarla.
+  - Las plantillas reutilizables de marca están en `brandkit/10-plantillas/`.
 
 ## Criterios de Publicación
 

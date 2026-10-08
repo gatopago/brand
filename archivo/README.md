@@ -7,6 +7,8 @@ Material archivado para consulta y registro técnico. **No se utiliza en piezas 
 - **`laboratorio-gatopago/`**:
   - Propuestas de animación, rigs experimentales, manuales alternativos y componentes del laboratorio (255 MB).
   - Conservado para trazabilidad artística y técnica.
+- **`estrategia/`**:
+  - Documentos de estrategia anteriores y adaptaciones conservadas como registro (`modificados/`) y sus originales (`originales/`). Movido desde `estrategia/archivo/` el 7 de octubre de 2026.
 
 ## Retirado el 7 de octubre de 2026
 

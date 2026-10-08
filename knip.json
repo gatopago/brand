@@ -1,8 +1,0 @@
-{
-  "entry": [
-    "herramientas/brandkit/release.test.mjs"
-  ],
-  "project": ["herramientas/**/*.mjs"],
-  "node": false,
-  "include": ["files", "dependencies", "unlisted", "unresolved"]
-}

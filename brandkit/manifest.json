@@ -15,8 +15,8 @@
     },
     {
       "path": "01-manual/entrega-y-mantenimiento.md",
-      "bytes": 8797,
-      "sha256": "932fd4d936f2b9f988ab3ba3d53ea13f014cd557ce64cee45dec86b65d2db260",
+      "bytes": 8807,
+      "sha256": "28bfc61df3c571fc7dca3158ee95afa2c863ec8278f8e9b3176ff82a26680e11",
       "source": "brandkit editorial / generated",
       "status": "internal"
     },
@@ -6353,8 +6353,8 @@
     },
     {
       "path": "08-imagenes/README.md",
-      "bytes": 1073,
-      "sha256": "511ec07693dfd6824a567a9904bdb111c1cdff4ba3e8ec701be993a6b398a289",
+      "bytes": 1078,
+      "sha256": "5ca2e8f06096dd276e3604d422f4a5865286f0203ba1809f190e1877155096e4",
       "source": "brandkit editorial / generated",
       "status": "internal"
     },

@@ -1,6 +1,6 @@
 # Alcance del repositorio
 
-Este checkout es la biblioteca de marca, estrategia, activos comerciales y herramientas de GatoPago. No es un frontend ni una landing web.
+Este checkout (`gatopago/brand`) es la biblioteca de marca, estrategia, activos comerciales y herramientas de GatoPago. No es un frontend ni una landing web.
 La app y la landing viven en el repositorio unificado `gatopago/gatopago`.
 
 - Trabajar aquí en `brandkit/`, `estrategia/`, `comercial/`, `contenido/`, `archivo/` y `herramientas/`.
