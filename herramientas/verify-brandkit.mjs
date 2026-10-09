@@ -19,6 +19,7 @@ let copies = 0, links = 0;
 const assert = (condition, message) => { if (!condition) failures.push(message); };
 async function checkLink(owner, link) {
   if (!link || /^(#|https?:|mailto:|data:)/.test(link)) return;
+  if (/'\+|\+'/.test(link)) return; // built in a page script (e.g. href="'+s.frame+'"), not a file path
   const name = decodeURIComponent(link.split('#')[0].split('?')[0]);
   if (!name) return;
   const resolved = path.resolve(path.dirname(owner), name);

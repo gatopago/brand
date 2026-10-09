@@ -435,8 +435,8 @@
     },
     {
       "path": "03-personaje/README.md",
-      "bytes": 6085,
-      "sha256": "5359af47979677abee9efe91760743a1b161c756c6fcd4c7c3436464a57cf96c",
+      "bytes": 6206,
+      "sha256": "e9d5b5dab1086d8036202e8485932a95bbc9f6271bf3b229491714692be21c6b",
       "source": "brandkit canonical",
       "status": "review"
     },
@@ -6088,6 +6088,195 @@
         "hasAlpha": true,
         "pages": 1
       }
+    },
+    {
+      "path": "03-personaje/propuestas/cola-v1/README.md",
+      "bytes": 949,
+      "sha256": "3311ed99809a3ad97ddbe4424024848171ee0e8b9549aad0bd036f818a8dff36",
+      "source": "brandkit canonical",
+      "status": "review"
+    },
+    {
+      "path": "03-personaje/propuestas/cola-v1/catalogo.css",
+      "bytes": 3742,
+      "sha256": "1287aa6bb817c60a116a1337aa5ddcf9888965b448f51309f9ef201fad92c649",
+      "source": "brandkit canonical",
+      "status": "review"
+    },
+    {
+      "path": "03-personaje/propuestas/cola-v1/cola-v1.webp",
+      "bytes": 664564,
+      "sha256": "ac026e2e0482e8cd53a55ca4de3670a5a7c11dea0d71a8481343aa35b4fea261",
+      "source": "brandkit canonical",
+      "status": "review",
+      "image": {
+        "format": "webp",
+        "width": 640,
+        "height": 512,
+        "hasAlpha": true,
+        "pages": 8
+      }
+    },
+    {
+      "path": "03-personaje/propuestas/cola-v1/fotogramas/01.png",
+      "bytes": 154890,
+      "sha256": "d0a3aba7f6823e9f4a0f2eae2c809b450d54641bfc93429b34510efa2b58d90c",
+      "source": "brandkit canonical",
+      "status": "review",
+      "image": {
+        "format": "png",
+        "width": 640,
+        "height": 512,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "03-personaje/propuestas/cola-v1/fotogramas/02.png",
+      "bytes": 158816,
+      "sha256": "efa556faf269ad29a818d0c85d41b93195ae7960ef15293fcaec667da5e20ee4",
+      "source": "brandkit canonical",
+      "status": "review",
+      "image": {
+        "format": "png",
+        "width": 640,
+        "height": 512,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "03-personaje/propuestas/cola-v1/fotogramas/03.png",
+      "bytes": 165550,
+      "sha256": "8706edc69c724c361a34ce58153e65e7b4b3d2ef9df41835eba5954259a04d26",
+      "source": "brandkit canonical",
+      "status": "review",
+      "image": {
+        "format": "png",
+        "width": 640,
+        "height": 512,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "03-personaje/propuestas/cola-v1/fotogramas/04.png",
+      "bytes": 167797,
+      "sha256": "fdb586ffb5fe8e8bc3fd749c0c2a7fa2045f263234ca1f94701eafc19ee8f21b",
+      "source": "brandkit canonical",
+      "status": "review",
+      "image": {
+        "format": "png",
+        "width": 640,
+        "height": 512,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "03-personaje/propuestas/cola-v1/fotogramas/05.png",
+      "bytes": 165086,
+      "sha256": "7c2e287a92faa2c8b253cc9392527b3b46107300f440a97611c805b5090e5a87",
+      "source": "brandkit canonical",
+      "status": "review",
+      "image": {
+        "format": "png",
+        "width": 640,
+        "height": 512,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "03-personaje/propuestas/cola-v1/fotogramas/06.png",
+      "bytes": 162468,
+      "sha256": "caf5ad455199a5f87df4b2b3642894d444ab927a494946ad903d7273c3ab3101",
+      "source": "brandkit canonical",
+      "status": "review",
+      "image": {
+        "format": "png",
+        "width": 640,
+        "height": 512,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "03-personaje/propuestas/cola-v1/fotogramas/07.png",
+      "bytes": 160904,
+      "sha256": "dd576903c9d46849b3c122da481eb8c852e832669ae79faca49f738769009dc3",
+      "source": "brandkit canonical",
+      "status": "review",
+      "image": {
+        "format": "png",
+        "width": 640,
+        "height": 512,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "03-personaje/propuestas/cola-v1/fotogramas/08.png",
+      "bytes": 154363,
+      "sha256": "3799aea00df34dca67f5090f7d6c678fae76891626d59cc821c0520995f0705f",
+      "source": "brandkit canonical",
+      "status": "review",
+      "image": {
+        "format": "png",
+        "width": 640,
+        "height": 512,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "03-personaje/propuestas/cola-v1/fuente/cola-v1.png",
+      "bytes": 922149,
+      "sha256": "4024261d0d00eef831d1f56c93958bb6d631be0b2ef6da322c95510e607b4b34",
+      "source": "brandkit canonical",
+      "status": "review",
+      "image": {
+        "format": "png",
+        "width": 1786,
+        "height": 880,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "03-personaje/propuestas/cola-v1/hoja-normalizada.png",
+      "bytes": 1291260,
+      "sha256": "c1753fe67801c6323a08d97534a89c5362c59acc6d8a6070e4885b20078ad757",
+      "source": "brandkit canonical",
+      "status": "review",
+      "image": {
+        "format": "png",
+        "width": 2560,
+        "height": 1024,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "03-personaje/propuestas/cola-v1/index.html",
+      "bytes": 12687,
+      "sha256": "c1a46ce1f70cc337b723ef6d11bc98e831b2454caa8f69c9c9d4e051c2c5b93f",
+      "source": "brandkit canonical",
+      "status": "review"
+    },
+    {
+      "path": "03-personaje/propuestas/cola-v1/manifest.json",
+      "bytes": 1092,
+      "sha256": "2dee38a67f9645fdd5cd207fe345973900bf3641dd04796b3834feb5b4a99b20",
+      "source": "brandkit canonical",
+      "status": "review"
+    },
+    {
+      "path": "03-personaje/propuestas/cola-v1/prompt.txt",
+      "bytes": 2191,
+      "sha256": "99064279a52639e015a5f1ad76577758bd7c16b44ea38947d4ffa31969e483d1",
+      "source": "brandkit canonical",
+      "status": "review"
     },
     {
       "path": "04-tipografia/README.md",

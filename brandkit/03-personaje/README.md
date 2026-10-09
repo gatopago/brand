@@ -12,6 +12,7 @@
 - [Manifiesto del personaje](./animaciones/manifest.json): tamaños, procedencia de los recortes, hashes de las hojas, orden y duración de cada paso. `playback: once` describe el uso previsto en producto, no el bucle de la preview.
 - `hd/`: 14 PNG estáticos, 147 fotogramas y 20 WebP ampliados por múltiplos enteros; lado mayor de al menos 2048 px. Se conservan proporciones, tiempos, RGB y alfa de los PNG originales, sin interpolación ni detalle inventado.
 - `hojas/`: 20 hojas PNG con todos los fotogramas únicos de cada secuencia, con su lienzo completo. También tienen una versión HD en `hd/hojas/`.
+- [Propuesta alternativa de cola](./propuestas/cola-v1/README.md): versión con una sola cola, pendiente de aprobación.
 - [Exportaciones](./exportaciones.json): dimensiones, escalas, hashes y procedencia de los 221 exports.
 - Entrega completa: ejecutar `npm run brandkit:zip`. El ZIP general en `output/` incluye directamente los originales, HD, hojas y metadatos del personaje, sin un ZIP duplicado dentro del kit.
 - [Avatar de GatoPago](../08-imagenes/avatar/README.md): logo SVG sobre Milk y siete tamaños PNG, separados del personaje.

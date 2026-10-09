@@ -1,0 +1,51 @@
+{
+  "id": "cola-v1",
+  "status": "propuesta alternativa; pendiente de aprobación artística",
+  "method": "image_gen built-in edit; separación mecánica de celdas y registro por cabeza; sin recolorear ni redibujar por código",
+  "source": "fuente/cola-v1.png",
+  "sourceSHA256": "4024261d0d00eef831d1f56c93958bb6d631be0b2ef6da322c95510e607b4b34",
+  "prompt": "prompt.txt",
+  "canvas": {
+    "width": 640,
+    "height": 512
+  },
+  "frames": 8,
+  "totalMs": 1540,
+  "playback": "loop",
+  "preview": "cola-v1.webp",
+  "sheet": "hoja-normalizada.png",
+  "sequence": [
+    {
+      "frame": "fotogramas/01.png",
+      "ms": 350
+    },
+    {
+      "frame": "fotogramas/02.png",
+      "ms": 130
+    },
+    {
+      "frame": "fotogramas/03.png",
+      "ms": 130
+    },
+    {
+      "frame": "fotogramas/04.png",
+      "ms": 250
+    },
+    {
+      "frame": "fotogramas/05.png",
+      "ms": 130
+    },
+    {
+      "frame": "fotogramas/06.png",
+      "ms": 180
+    },
+    {
+      "frame": "fotogramas/07.png",
+      "ms": 130
+    },
+    {
+      "frame": "fotogramas/08.png",
+      "ms": 240
+    }
+  ]
+}
