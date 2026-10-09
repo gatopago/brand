@@ -1,6 +1,6 @@
 # Iconos de caminos
 
-**Estado:** en revisión, pendiente de aprobación. Movido desde el laboratorio el 9 de octubre de 2026: es la única familia de iconos de la marca y la usa el generador de redes (`herramientas/brandkit/social.mjs`). Hay una propuesta de mejora de cuatro iconos en `estrategia/auditorias/iconos-2026-10/` del repositorio de marca.
+**Estado:** en revisión. La usa el generador de redes (`herramientas/brandkit/social.mjs`). Hay una [propuesta de corrección de cuatro iconos](./propuesta-2026-10/README.md).
 
 32 iconos originales SVG, retícula de 24 × 24, contorno de 2 unidades, extremos cuadrados y esquinas sin redondear. No son emojis ni logos de activos.
 

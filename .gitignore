@@ -20,13 +20,11 @@ output/
 Captura de pantalla*
 screenshots/
 
-# Documents: only commercial PDFs and decks (current and archived) are versioned
+# Documents: only commercial PDFs and decks are versioned
 *.pdf
 *.pptx
 !comercial/**/*.pdf
 !comercial/**/*.pptx
-!archivo/comercial/**/*.pdf
-!archivo/comercial/**/*.pptx
 
 # Browser automation and QA captures
 .cache/

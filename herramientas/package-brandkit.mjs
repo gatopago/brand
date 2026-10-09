@@ -1,4 +1,4 @@
-/** Build a deterministic delivery ZIP, excluding retired work (descartado/). */
+/** Build a deterministic delivery ZIP of the kit (internal) or of the approved baseline (external). */
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -15,8 +15,8 @@ if(checked.failures.length) throw new Error(`Run brandkit:build first:\n${checke
 const manifest = JSON.parse(await fs.readFile(path.join(kit,'manifest.json'),'utf8'));
 const release=await readRelease(kit);
 const external=process.argv.includes('--external');
-const excluded = external ? ['unapproved-assets','internal-documents','originals','references','retired-work'] : ['descartado/'];
-const included = external ? approvedAssets(manifest.files,release) : manifest.files.filter(row=>!row.path.startsWith('descartado/'));
+const excluded = external ? ['unapproved-assets','internal-documents','originals','references'] : [];
+const included = external ? approvedAssets(manifest.files,release) : manifest.files;
 const work = await fs.mkdtemp(path.join(root,'.brandkit-work-'));
 try {
   const delivery = path.join(work,'delivery');
@@ -32,7 +32,7 @@ try {
       await fs.writeFile(inside(delivery,name),bytes);
       included.push({path:name,bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex'),source:'generated/external-delivery',status:'delivery-document'});
     }
-  } else await fs.copyFile(path.join(kit,'CONTROL-DE-CALIDAD.md'),path.join(delivery,'CONTROL-DE-CALIDAD.md'));
+  }
   const deliveryManifest = {...manifest,profile:external?'approved-delivery':'delivery',excludedAreas:excluded,files:included,...(external?{releasePolicy:release}:{})};
   await fs.writeFile(path.join(delivery,'manifest.json'),JSON.stringify(deliveryManifest,null,2)+'\n');
   const result = await verifyKit(delivery);

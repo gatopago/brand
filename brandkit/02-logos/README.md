@@ -12,7 +12,7 @@ Edición 2026-09-25 · Símbolo reconstruido como pixel art; favicons generados 
 
 ## El símbolo
 
-Es la cabeza del personaje original reconstruida sobre su rejilla real: 30 × 23 bloques, tres colores de marca, simétrica. Sustituye al símbolo plano anterior, que se descartó.
+Es la cabeza del personaje original reconstruida sobre su rejilla real: 30 × 23 bloques, tres colores de marca, simétrica.
 
 - **Escala**: siempre a múltiplos enteros para que cada bloque quede nítido: 30 × 23, 60 × 46, 90 × 69, 120 × 92… En navegación, ×1 o ×2. El ×1,5 queda descartado: solo es exacto en pantallas 2×.
 - **Lienzo**: 32 × 32 con la cabeza en (1, 4), igual que el favicon de 32 px.

@@ -15,11 +15,11 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
 const kit=path.join(root,'brandkit');
 const sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
 
-test('release policy separates baseline, reviews, references and retired work',async()=>{
+test('release policy separates baseline, reviews and references',async()=>{
   const release=await readRelease(kit);
   assert.equal(release.version,'1.0.0-rc.1');
   assert.equal(release.approval.newAssetsApproved,false);
-  for(const [name,status] of Object.entries({'02-logos/simbolo/gatopago.svg':'approved-baseline','02-logos/horizontal/gatopago-claro.svg':'review','03-personaje/qa/review.png':'review','09-componentes/index.html':'review','10-plantillas/index.html':'review','06-originales/spritesmeli1.png':'reference','07-referencias/README.md':'reference','descartado/example.svg':'retired','01-manual/identidad-y-voz.md':'internal'})) assert.equal(statusOf(name,release),status);
+  for(const [name,status] of Object.entries({'02-logos/simbolo/gatopago.svg':'approved-baseline','02-logos/horizontal/gatopago-claro.svg':'review','03-personaje/qa/review.png':'review','09-componentes/index.html':'review','10-plantillas/index.html':'review','06-originales/spritesmeli1.png':'reference','11-iconos/svg/cobrar.svg':'review','01-manual/identidad-y-voz.md':'internal'})) assert.equal(statusOf(name,release),status);
   const rows=approvedAssets((await JSON.parse(await fs.readFile(path.join(kit,'manifest.json'),'utf8'))).files,release);
   assert.ok(rows.length>10);
   assert.ok(rows.every(row=>!row.path.endsWith('.md')));
@@ -56,7 +56,7 @@ test('external delivery is independently readable and excludes all review materi
       const local=name.slice('brandkit/'.length);
       assert.equal(name.startsWith('brandkit/'),true);
       if(!['manifest.json','README.md','index.html'].includes(local)) assert.equal(statusOf(local,release),'approved-baseline',local);
-      assert.doesNotMatch(name,/(?:qa|raw-problem-sequences|03-personaje|06-originales|07-referencias|09-componentes|10-plantillas|descartado)\//);
+      assert.doesNotMatch(name,/(?:qa|raw-problem-sequences|03-personaje|06-originales|09-componentes|10-plantillas|11-iconos|12-movimiento)\//);
       const dest=inside(work,name);
       await fs.mkdir(path.dirname(dest),{recursive:true});
       await fs.writeFile(dest,bytes);

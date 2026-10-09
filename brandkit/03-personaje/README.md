@@ -18,22 +18,12 @@
 
 Estas piezas conservan semitransparencias, variaciones de color y densidades de píxel de los originales. Por ejemplo, la expresión neutral original contiene 7.018 valores RGB visibles y 71.243 píxeles con alfa entre 1 y 254. Las versiones HD amplían esos mismos píxeles: no convierten los recortes en arte de paleta cerrada. El SVG entregado corresponde al logo y al avatar; todavía no se entregan vectores ni borde para fondo oscuro del personaje.
 
-**Retoques de la revisión del 3 de octubre de 2026.** Cuatro animaciones se corrigieron en el generador, sin redibujar al gato:
-
-- **Cola** y **Metí la pata**: la revisión del 5 de octubre duplica en espejo el lado izquierdo del cuerpo para formar las patas derechas. Se copian los píxeles RGBA originales, incluido el contorno y la transparencia, sin rellenos pintados ni interpolación. Sustituye el parche redondeado anterior; conserva la cabeza y la cola móvil. Se aplica a los ocho frames de Cola y a los seis de Metí la pata.
-- **Metí la pata, primer frame**: la máscara del rótulo termina antes de la punta de la oreja izquierda; se recuperan los píxeles de la hoja original, sin inventar una oreja nueva.
-- **Unión de la cola**: se separa la cola original completa y se desplaza 12 píxeles hacia el cuerpo, detrás de las patas duplicadas. Así desaparece el corte rectangular de la raíz. Se conservan el dibujo, los colores opacos y el movimiento; la cabeza permanece delante. Los bordes semitransparentes se componen por alfa sobre la cola, en lugar de reemplazarla, para evitar una costura clara entre las piezas.
-- **Caminata**: las patas del fondo llevan un tono más oscuro y hay una sombra suave en el suelo, para distinguir las patas.
-- **Caminata, 7 de octubre**: se descartan los ensayos posteriores y se conservan los seis fotogramas originales de la galería. Solo cambia el ritmo: 130 ms por fotograma, ciclo de 780 ms (antes 110 ms y 660 ms). No se retoca el dibujo ni se reordenan los pasos. El ajuste sin recodificar la preview se ejecuta con `node herramientas/brandkit/retime-caminata.mjs`, seguido de `brandkit:build` para actualizar los exports y la galería.
-- **Preparando el pago**: el primer fotograma recupera la oreja que borraba, por error, la caja de la etiqueta de la hoja original.
-
 Para regenerar los recortes: `npm run brandkit:personaje`, después `npm run brandkit:build` y `npm run brandkit:verify`. El build crea los HD, las hojas, la galería y el ZIP de avatares. El ZIP de entrega general se genera por separado con `brandkit:zip`. Reutiliza únicamente exports cuyos hashes y receta siguen coincidiendo con las fuentes. El generador comprueba las entradas y prepara una carpeta temporal antes de sustituir las piezas actuales; conserva este README.
 
 Para una revisión limitada, usar `npm run brandkit:personaje -- --only=cola,meti-la-pata` antes del build. Esta opción conserva las poses estáticas y las demás animaciones byte a byte. Los tiempos y tamaños de las dos secuencias no cambian.
 
 - El gato acompaña, orienta y reacciona. **No es el logo**: el símbolo de [02-logos](../02-logos/README.md) no cambia.
 - No tiene nombre público. En textos se habla de «el gato» o de la acción que realiza.
-- El trabajo retirado de septiembre de 2026 está en `descartado/`, solo como consulta interna.
 
 ## Encargo para rehacerlo
 

@@ -15,7 +15,7 @@ Base observada en la landing: altura mínima 48 px, borde 2 px, radio 0, sombra 
 | Deshabilitado | Explicar la causa cuando no sea evidente; no depender solo de opacidad |
 | Teclado | Foco visible y consistente, distinto del estado seleccionado |
 
-El CSS actual usa transiciones de 120 ms con `steps(2)` en sombra y transformación, y 160 ms para fondo. Es parte del snapshot, no una obligación de aplicar pasos a cada animación. Movimiento de trayectos o de lectura puede necesitar interpolación continua para no parecer lag.
+Referencia: transiciones de 120 ms con `steps(2)` en sombra y transformación, y 160 ms para fondo. No es obligatorio aplicar pasos a cada animación. Movimiento de trayectos o de lectura puede necesitar interpolación continua para no parecer lag.
 
 Una sola acción primaria por contexto. “Cancelar” no compite visualmente con “Confirmar”. No duplicar “Escanear” si ambos controles llevan al mismo flujo.
 

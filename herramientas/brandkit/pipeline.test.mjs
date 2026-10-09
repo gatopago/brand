@@ -56,7 +56,7 @@ test('brandkit pipeline is self-contained and fail-safe', async t=>{
   const fixture = path.join(work,'fixture');
   await fs.mkdir(fixture);
   try {
-    for(const relative of ['herramientas','brandkit','estrategia/vigente']) {
+    for(const relative of ['herramientas','brandkit']) {
       await fs.cp(path.join(root,relative),path.join(fixture,relative),{recursive:true});
     }
     const kit=path.join(fixture,'brandkit');
@@ -217,21 +217,11 @@ test('brandkit pipeline is self-contained and fail-safe', async t=>{
       assert.deepEqual(await sharp(file).ensureAlpha().raw().toBuffer(),await sharp(original).ensureAlpha().raw().toBuffer());
       run('verify-brandkit.mjs');
     });
-    await t.test('explicit source comparison detects drift; standalone verification still passes',async()=>{
-      const source=path.join(fixture,'estrategia/vigente/gatopago-plan-marca-experiencia-2026.md');
-      const original=await fs.readFile(source);
-      try {
-        await fs.writeFile(source,Buffer.concat([original,Buffer.from('changed')]));
-        run('verify-brandkit.mjs');
-        const result=run('verify-brandkit.mjs',['--sources'],1);
-        assert.match(result.stdout,/Copy differs from source/);
-      } finally { await fs.writeFile(source,original); }
-    });
     await t.test('CRLF and LF source checkouts produce identical packages',async()=>{
       const before=await inventory(kit);
       const originals=new Map();
       try {
-        for(const relative of ['herramientas/brandkit/catalogo.html','estrategia/vigente/gatopago-plan-marca-experiencia-2026.md']) {
+        for(const relative of ['herramientas/brandkit/catalogo.html']) {
           const file=path.join(fixture,relative);
           const bytes=await fs.readFile(file);
           originals.set(file,bytes);
@@ -241,11 +231,10 @@ test('brandkit pipeline is self-contained and fail-safe', async t=>{
         assert.deepEqual(await inventory(kit),before);
       } finally { for(const [file,bytes] of originals) await fs.writeFile(file,bytes); }
     });
-    await t.test('delivery ZIP excludes retired work and verifies independently',async()=>{
+    await t.test('delivery ZIP holds the kit and verifies independently',async()=>{
       const result=JSON.parse(run('package-brandkit.mjs').stdout);
       const zipped=await fs.readFile(result.zip);
       const entries=unzipSync(zipped);
-      assert.equal(Object.keys(entries).some(name=>name.startsWith('brandkit/descartado/')),false);
       assert.equal(Object.keys(entries).some(name=>name.startsWith('brandkit/02-logos/simbolo/')),true);
       assert.equal(Object.keys(entries).filter(name=>/^brandkit\/03-personaje\/estaticos\/.*\.png$/.test(name)).length,14);
       assert.equal(Object.keys(entries).filter(name=>/^brandkit\/03-personaje\/animaciones\/[^/]+\.webp$/.test(name)).length,20);

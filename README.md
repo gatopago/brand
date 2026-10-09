@@ -1,59 +1,30 @@
-# GatoPago — Identidad, Estrategia y Recursos
+# GatoPago · Marca
 
-Repositorio: [`gatopago/brand`](https://github.com/gatopago/brand) (privado). Este repositorio es la biblioteca central de marca, estrategia, activos comerciales y generadores de GatoPago.  
-No contiene código de frontend, servidor web ni configuración de despliegue (la app y la landing viven en el repositorio unificado `gatopago/gatopago`).
-
-## Mapa del repositorio
+Repositorio [`gatopago/brand`](https://github.com/gatopago/brand) (privado): identidad, estrategia, material comercial y contenido de GatoPago. La app y la landing viven en `gatopago/gatopago`.
 
 ```
-├── brandkit/                    IDENTIDAD CANÓNICA
-│                                Manual, logos, personaje, tipografía, colores, plantillas, iconos, movimiento y catálogo
-│
-├── estrategia/                  QUÉ ES GATOPAGO Y POR QUÉ
-│   ├── vigente/                 Narrativa 2026-10, promesa de marca, índice maestro y rebranding
-│   ├── planes/                  Planes estratégicos 2026–2030 (producto, finanzas, marketing, B2B…)
-│   ├── investigacion/           Datos de Bolivia y guion de entrevistas (benchmarks pendientes)
-│   └── auditorias/              Auditoría de marca y recomendaciones de diseño
-│
-├── comercial/                   VENTAS, CAPITAL Y ALIANZAS
-│   ├── pitch/                   Decks vigentes ES/EN (fuente de claude.ai) y guion
-│   ├── grants/                  Plantilla y una carpeta por convocatoria (Arbitrum, Innova)
-│   ├── equipo/                  Foto y material del equipo
-│   ├── partners/                Propuestas y one-pagers para aliados comerciales
-│   └── data-room/               Índice para due diligence (sin datos sensibles)
-│
-├── contenido/                   COMUNICACIÓN Y PUBLICACIONES
-│   ├── redes/2026-10/           172 piezas sociales generadas (posts, carruseles, banners, stickers)
-│   ├── redes/portada-x/         Portada de X y su encargo
-│   └── calendario/              Plan editorial y cronograma de publicación
-│
-├── archivo/                     REGISTRO HISTÓRICO (No usar en piezas nuevas)
-│   ├── estrategia/              Banco de ideas para hackathons (junio de 2026)
-│   └── comercial/               PDF de los decks v1 y v2, anteriores a la narrativa de octubre
-│
-├── herramientas/                SCRIPTS Y GENERADORES
-│   ├── brandkit/                Generadores de personaje, piezas sociales, release y tests
-│   ├── build-brandkit.mjs       Compilación determinista del kit
-│   ├── verify-brandkit.mjs      Verificación estricta de inventario y hashes
-│   └── package-brandkit.mjs     Empaquetado de ZIP interno y externo
-│
-└── output/                      Entregas locales (ignorado por Git)
+brandkit/       Identidad oficial: manual, logos, personaje, tipografía, colores,
+                imágenes, componentes, plantillas, iconos y movimiento.
+                Empieza por brandkit/index.html.
+estrategia/     vigente/ (manda), planes/ e investigacion/
+comercial/      pitch/ (decks ES y EN), partners/ (one-pager), grants/,
+                equipo/ y data-room/
+contenido/      redes/ (172 piezas y portada de X) y calendario/
+herramientas/   Scripts que generan, verifican y empaquetan el kit
+output/         Entregas generadas en tu PC (no va a Git)
 ```
 
-## Herramientas del Brandkit
+## Comandos
 
-Con Node >=22.12:
+Con Node 22.12 o superior:
 
 ```sh
 npm ci
-npm run brandkit:build          # Genera catálogo, tokens CSS/CSV/GPL y manifiesto
-npm run brandkit:verify -- --sources  # Valida inventario, hashes y coincidencia de fuentes
-npm run brandkit:test           # Ejecuta suite completa de pruebas unitarias
-npm run brandkit:zip            # Genera ZIP interno para el equipo
-npm run brandkit:external       # Genera ZIP externo sin material en revisión
+npm run brandkit:build       # regenera el kit
+npm run brandkit:verify      # verifica inventario, hashes y enlaces
+npm run brandkit:test        # pruebas del pipeline
+npm run brandkit:zip         # ZIP interno en output/
+npm run brandkit:external    # ZIP solo con lo aprobado
+npm run brandkit:social      # rehace las piezas de contenido/redes/2026-10
+npm run contenido:calendario # rehace el calendario editorial
 ```
-
-La candidata actual es **1.0.0-rc.1**.  
-Las fuentes editables están versionadas: mapas del símbolo, tokens JSON, originales, fuentes tipográficas con licencia y plantillas. No se borra `brandkit/` para regenerarlo.
-
-Consulta [entrega y mantenimiento](./brandkit/01-manual/entrega-y-mantenimiento.md) para más detalles.

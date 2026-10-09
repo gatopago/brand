@@ -37,12 +37,10 @@ for (const row of inventory.files) {
     if (row.transform === 'lf') original = Buffer.from(original.toString('utf8').replace(/\r\n/g,'\n'));
     assert(hash(bytes) === hash(original), `Copy differs from source: ${row.path}`); copies++;
   }
-  // Retired work keeps its old relative links; it is inventoried (hashes) but its links are not checked.
-  const archived = row.path.startsWith('descartado/');
-  if (row.path.endsWith('.html') && !archived) {
+  if (row.path.endsWith('.html')) {
     for (const m of bytes.toString().matchAll(/(?:href|src|data-static|data-animated)="([^"]+)"/g)) await checkLink(file,m[1]);
   }
-  if (row.path.endsWith('.md') && !archived) {
+  if (row.path.endsWith('.md')) {
     const markdown = bytes.toString().replace(/```[\s\S]*?```/g,'');
     for (const m of markdown.matchAll(/\[[^\]]*\]\(([^)\s]+)\)/g)) await checkLink(file,m[1]);
   }
@@ -52,7 +50,7 @@ for (const row of inventory.files) {
 }
 const indexed = inventory.files.map(row => row.path);
 assert(new Set(indexed).size===indexed.length,'Duplicate inventory paths');
-const actual = (await files(kit)).map(file=>slash(path.relative(kit,file))).filter(file=>!['manifest.json','CONTROL-DE-CALIDAD.md'].includes(file));
+const actual = (await files(kit)).map(file=>slash(path.relative(kit,file))).filter(file=>file!=='manifest.json');
 assert(JSON.stringify(actual.sort())===JSON.stringify([...indexed].sort()),'Inventory does not cover the exact file set');
 if(inventory.profile==='approved-delivery') {
   const policy=inventory.releasePolicy;

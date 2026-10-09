@@ -1,6 +1,6 @@
 # Movimiento de caminos
 
-**Estado:** en revisión, pendiente de aprobación. Movido desde el laboratorio el 9 de octubre de 2026. Las reglas generales están en [movimiento y componentes](../01-manual/movimiento-y-componentes.md); `09-componentes/` usa dos animaciones CSS equivalentes a ruta y espera.
+**Estado:** en revisión. Las reglas generales están en [movimiento y componentes](../01-manual/movimiento-y-componentes.md); `09-componentes/` usa dos animaciones CSS equivalentes a ruta y espera.
 
 Seis SVG nativos, sin imágenes raster ni bibliotecas externas. Ruta, conexión, confirmación, intercambio, espera y entrada. Las variantes `reducido/` no contienen animaciones. Las variantes animadas respetan `prefers-reduced-motion` por CSS.
 
@@ -14,4 +14,3 @@ En flujos financieros el texto de estado es la fuente de información; la ilustr
 
 El centro del bloque de ruta parte de x=24 y llega a x=280, los extremos reales del rail. El reinicio ocurre con opacidad cero; el bloque no salta de vuelta mientras es visible. Conexión e intercambio usan el mismo criterio. Las variantes reducidas quedan visibles y no contienen animaciones.
 
-La prueba de navegador del laboratorio (seis ejemplos a 390 y 1280 px) se retiró con el laboratorio; queda en el historial de Git.

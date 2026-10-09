@@ -13,7 +13,6 @@ Los decks vigentes se editan y presentan en claude.ai (tipo Slides). Esta carpet
 - Las imágenes y fuentes de los decks son archivos subidos a claude.ai (`/_blob/…`); proceden del brandkit. Las diapositivas de esta carpeta no se ven solas: son la fuente, no una exportación.
 - Las cuatro fuentes de los decks (GatoPago Display, Text, Strong y Mono) son versiones fijas de Recursive con pesos 760, 460, 680 y 620 (Mono, monoespaciada). Google Slides no las reconoce y pone Verdana: para Google Slides usar la copia de arriba.
 - Para tener PDF o PPTX: en el deck, Compartir › Exportar. Guardarlos aquí como `gatopago-pitch-deck-AAAA-MM-es.pdf` y `…-en.pdf`.
-- Los PDF de los decks anteriores a la narrativa de octubre (v1 y v2) están en [`archivo/comercial/pitch-anterior/`](../../archivo/comercial/pitch-anterior/LEEME.txt). Registro, no se presentan.
 
 Copia tomada el 8 de octubre de 2026 (ES: versión del 3 de octubre; EN: versión del 4 de octubre). Si se edita un deck en claude.ai, volver a copiar su fuente aquí.
 

@@ -41,12 +41,10 @@ async function copy(source, relative, label) {
 
 const originalNames = ['d54017bf-565f-49e0-8192-bd0f47bfc050.png','spritesmeli1.png','spritesmeli2.png',
   'Image Aug 19, 2026, 01_47_20 AM (1).png', ...[2,3,4,5].map(i => `Image Aug 19, 2026, 01_47_21 AM (${i}).png`)];
-const documentNames = ['gatopago-rebranding-maestro-2026.md','gatopago-plan-marca-experiencia-2026.md','gatopago_nueva_narrativa_contexto_completo_2026-08-18.txt'];
 const required = [
-  ...documentNames.map(name=>path.join(root,'estrategia/vigente',name)),
   path.join(root,'herramientas/brandkit/catalogo.html'),
   ...originalNames.map(name=>path.join(currentKit,'06-originales',name)),
-  ...['README.md','CONTROL-DE-CALIDAD.md','02-logos/modelo/simbolo.txt','02-logos/modelo/simbolo-16.txt','03-personaje/README.md','03-personaje/animaciones/manifest.json','04-tipografia/recursive/full.css','04-tipografia/recursive/LICENSE.txt','05-colores/tokens.json','08-imagenes/open-graph/og.png'].map(name=>path.join(currentKit,name)),
+  ...['README.md','02-logos/modelo/simbolo.txt','02-logos/modelo/simbolo-16.txt','03-personaje/README.md','03-personaje/animaciones/manifest.json','04-tipografia/recursive/full.css','04-tipografia/recursive/LICENSE.txt','05-colores/tokens.json','08-imagenes/open-graph/og.png'].map(name=>path.join(currentKit,name)),
 ];
 const missing = [];
 for(const file of required) {
@@ -82,7 +80,6 @@ for (const [relative, bytes] of Object.entries(await symbolFiles(
   await write(relative, bytes);
 }
 // Originals, the character brief and licensed font files are canonical in Git.
-// descartado/ keeps retired work (the 2026-09 mascot); it is inventoried but never shipped in the delivery ZIP.
 const character = JSON.parse(await fs.readFile(target('03-personaje/animaciones/manifest.json'), 'utf8'));
 const exports = await characterExports(kit,character);
 const avatar = await avatarFiles(await fs.readFile(target('02-logos/modelo/simbolo.txt'),'utf8'));
@@ -94,9 +91,6 @@ await write('04-tipografia/uso.css', `@import url('./recursive/full.css');
 .gp-mono { font-family: 'Recursive Variable', monospace; font-variation-settings: 'MONO' 1, 'CASL' 0, 'slnt' 0, 'CRSV' .5; font-variant-numeric: tabular-nums; }
 `);
 
-for (const name of documentNames) {
-  await copy(path.join(root, 'estrategia/vigente', name), `07-referencias/documentos/${name}`);
-}
 const tokenDocument = JSON.parse(await fs.readFile(target('05-colores/tokens.json'),'utf8'));
 const tokens = tokenDocument.tokens;
 if (tokenDocument.schemaVersion !== 1 || !tokens || !Object.keys(tokens).length || Object.entries(tokens).some(([name,value])=>!/^--meli-[\w-]+$/.test(name) || typeof value !== 'string' || /[;{}\r\n]/.test(value))) {
@@ -123,9 +117,9 @@ for (const [name,bytes] of Object.entries(await designFiles(kit))) await write(n
 const inventory = [];
 for (const file of await files(kit)) {
   const relative = slash(path.relative(kit,file));
-  if (['manifest.json','CONTROL-DE-CALIDAD.md'].includes(relative)) continue;
+  if (relative === 'manifest.json') continue;
   const buffer = await fs.readFile(file);
-  const canonical = ['02-logos/modelo/','03-personaje/','04-tipografia/recursive/','05-colores/tokens.json','06-originales/','08-imagenes/open-graph/','descartado/'].some(prefix=>relative.startsWith(prefix));
+  const canonical = ['02-logos/modelo/','03-personaje/','04-tipografia/recursive/','05-colores/tokens.json','06-originales/','08-imagenes/open-graph/'].some(prefix=>relative.startsWith(prefix));
   const row = {path:relative,bytes:buffer.length,sha256:crypto.createHash('sha256').update(buffer).digest('hex'),source:canonical?'brandkit canonical':provenance.get(relative)||'brandkit editorial / generated'};
   row.status = statusOf(relative,release);
   if(transforms.has(relative)) row.transform=transforms.get(relative);
@@ -137,7 +131,7 @@ for (const file of await files(kit)) {
   }
   inventory.push(row);
 }
-await write('manifest.json', JSON.stringify({schemaVersion:2,profile:'repository',brand:'GatoPago',edition:'2026-09-28',version:release.version,copyPolicy:'Raster images from other sources are copied byte-for-byte; derived text and SVG snapshots use LF. Canonical kit sources are versioned in Git. descartado/ holds retired work and is excluded from the delivery ZIP.',files:inventory},null,2)+'\n');
+await write('manifest.json', JSON.stringify({schemaVersion:2,profile:'repository',brand:'GatoPago',edition:'2026-09-28',version:release.version,copyPolicy:'Raster images from other sources are copied byte-for-byte; derived text and SVG snapshots use LF. Canonical kit sources are versioned in Git.',files:inventory},null,2)+'\n');
 const result = await verifyKit(kit,{sourceRoot:root});
 if(result.failures.length) throw new Error(`Staged kit failed validation:\n${result.failures.join('\n')}`);
 if(initialFingerprint !== await fingerprint(currentKit)) throw new Error('Canonical kit changed during build; refusing replacement');

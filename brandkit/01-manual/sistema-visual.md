@@ -10,7 +10,7 @@ La [paleta entregada](../05-colores/README.md) conserva los valores de la identi
 
 ## Logo
 
-Archivo principal: [gatopago.svg](../02-logos/simbolo/gatopago.svg). Es pixel art de 30 × 23 bloques en tres colores (Ink, Cat Fire y Cat Shadow), simétrico y sin fondo. Es la cabeza del personaje original reconstruida sobre su rejilla real, y sustituye al símbolo plano anterior, que se descartó. Su fuente editable son los mapas de [02-logos/modelo](../02-logos/README.md).
+Archivo principal: [gatopago.svg](../02-logos/simbolo/gatopago.svg). Es pixel art de 30 × 23 bloques en tres colores (Ink, Cat Fire y Cat Shadow), simétrico y sin fondo. Es la cabeza del personaje original reconstruida sobre su rejilla real. Su fuente editable son los mapas de [02-logos/modelo](../02-logos/README.md).
 
 - **Escala entera**: 30 × 23, 60 × 46, 90 × 69, 120 × 92… A escalas no enteras los bloques quedan desiguales. El ×1,5 queda descartado: solo es exacto en pantallas 2×.
 - **Tamaños pequeños**: por debajo de 30 px de ancho, usar la versión de 16 × 16 ([gatopago-16.svg](../02-logos/simbolo/gatopago-16.svg)) o los favicons dedicados. No reducir la versión completa.
