@@ -1,32 +1,13 @@
-GatoPago · Pitch deck
+GatoPago · Pitch deck anterior
 
-Los decks de esta carpeta son anteriores a la narrativa de octubre de 2026:
-se conservan como registro y no se presentan. El deck vigente es la página
-privada de claude.ai «GatoPago · Pitch deck».
+Registro de los decks presentados antes de la narrativa de octubre de 2026.
+No se reutilizan. Los decks vigentes están en comercial/pitch/.
 
-GatoPago_Pitch_Deck_v2.pptx
-Versión 2 (1 de octubre de 2026), 14 diapositivas, editable. Los textos y
-diagramas son objetos nativos de PowerPoint; las ilustraciones y el logo
-proceden del brandkit oficial.
+GatoPago_Pitch_Deck_GatoPago.pdf
+Versión 1, 14 diapositivas.
 
-GatoPago_Pitch_Deck_v2.pdf y GatoPago_Pitch_Deck_GatoPago.pdf
-PDF de la versión 2 y de la versión 1, listos para compartir. Mantienen la
-composición y las fuentes sin necesidad de instalar nada.
+GatoPago_Pitch_Deck_v2.pdf
+Versión 2 (1 de octubre de 2026), 14 diapositivas.
 
-El PPTX de la versión 1 y el PowerPoint original se retiraron el 7 de octubre
-de 2026; siguen en el historial de Git.
-
-fondos-v2/
-Dos fondos generados con IA (geometría pixelada en los bordes, paleta Milk,
-Ink, Oat y Cat Fire, sin texto, logos ni personajes). Los prompts están en
-fondos-v2/prompts.json.
-
-fuentes/
-Tres variantes estáticas de Recursive, con los ejes del brandkit de GatoPago:
-GatoPago Deck Text, GatoPago Deck Display y GatoPago Deck Brand.
-Van incrustadas en el PowerPoint. Si tu editor sustituye una fuente al
-editar, instala los tres archivos TTF y vuelve a abrir la presentación.
-
-Las variantes estáticas llevan nombres propios para respetar la licencia
-de la fuente original. La licencia SIL Open Font License está en
-fuentes/LICENSE.txt.
+El PPTX editable de la v2, sus fondos y sus fuentes TTF se retiraron el
+9 de octubre de 2026; siguen en el historial de Git.

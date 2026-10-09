@@ -7,6 +7,7 @@ Material para vender, conseguir fondos y cerrar alianzas. Todo sale de la [narra
 | [`pitch/`](./pitch/README.md) | Decks vigentes en español e inglés (enlaces a claude.ai y su fuente versionada en `deck-es/` y `deck-en/`) y [guion](./pitch/gatopago-pitch-deck-guion-2026-10-03.md). Los decks anteriores a la narrativa nueva están en `archivo/comercial/pitch-anterior/`. |
 | [`partners/`](./partners/) | [One-pager](./partners/gatopago-one-pager-2026-10.pdf) en A4 (fuente editable: el `.html` del mismo nombre). |
 | [`grants/`](./grants/) | [Plantilla de solicitud](./grants/plantilla-solicitud-grant.md) y una carpeta por convocatoria. |
+| [`equipo/`](./equipo/README.md) | Foto del fundador y material de equipo para decks y grants. |
 | [`data-room/`](./data-room/README.md) | Índice de due diligence con el estado de cada documento. |
 
 ## Reglas

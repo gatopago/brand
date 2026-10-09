@@ -17,7 +17,8 @@ No contiene código de frontend, servidor web ni configuración de despliegue (l
 │
 ├── comercial/                   VENTAS, CAPITAL Y ALIANZAS
 │   ├── pitch/                   Decks vigentes ES/EN (fuente de claude.ai) y guion
-│   ├── grants/                  Plantilla, convocatorias y bases de referencia
+│   ├── grants/                  Plantilla y una carpeta por convocatoria (Arbitrum, Innova)
+│   ├── equipo/                  Foto y material del equipo
 │   ├── partners/                Propuestas y one-pagers para aliados comerciales
 │   └── data-room/               Índice para due diligence (sin datos sensibles)
 │
@@ -27,8 +28,8 @@ No contiene código de frontend, servidor web ni configuración de despliegue (l
 │   └── calendario/              Plan editorial y cronograma de publicación
 │
 ├── archivo/                     REGISTRO HISTÓRICO (No usar en piezas nuevas)
-│   ├── estrategia/              Documentos de estrategia anteriores y adaptaciones
-│   └── comercial/               Decks de pitch anteriores a la narrativa de octubre
+│   ├── estrategia/              Banco de ideas para hackathons (junio de 2026)
+│   └── comercial/               PDF de los decks v1 y v2, anteriores a la narrativa de octubre
 │
 ├── herramientas/                SCRIPTS Y GENERADORES
 │   ├── brandkit/                Generadores de personaje, piezas sociales, release y tests

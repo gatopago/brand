@@ -16,10 +16,10 @@ Esta carpeta es la fuente central de fundamentación y estrategia de GatoPago. L
 - **[`planes/`](./planes/)**: Planes específicos 2026–2030:
   - Planes de empresa, finanzas y capital, producto y tecnología, crecimiento y distribución, marketing, operaciones y riesgo, B2C, B2B transfronterizo, B2B2C embedded, métricas y mejoras.
 - **[`investigacion/`](./investigacion/)**:
-  - Datos de Bolivia con fuentes y guion de entrevistas. Pendientes: benchmarks competitivos y estudio normativo (el benchmark de Peanut anterior está en `archivo/estrategia/modificados/`).
+  - Datos de Bolivia con fuentes y guion de entrevistas. Pendientes: benchmarks competitivos y estudio normativo (el benchmark de Peanut de agosto, desactualizado, sirve de base).
 - **[`auditorias/`](./auditorias/)**:
   - [`gatopago-auditoria-marca-2026-10-03.md`](./auditorias/gatopago-auditoria-marca-2026-10-03.md): Auditoría completa de identidad, activos y recomendaciones de orden.
-- **Histórico:** los documentos anteriores y las adaptaciones conservadas como registro están en [`archivo/estrategia/`](../archivo/estrategia/), junto al resto del archivo del repositorio.
+- **Histórico:** lo que queda de estrategia antigua está en [`archivo/estrategia/`](../archivo/estrategia/).
 
 *Nota:* El guion y las presentaciones del pitch deck se gestionan en [`../comercial/pitch/`](../comercial/pitch/).
 

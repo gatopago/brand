@@ -1,5 +1,7 @@
 # GatoPago — benchmark de Peanut 2026
 
+> **Aviso (9 de octubre de 2026):** documento desactualizado, traído desde el archivo como base para el benchmark competitivo pendiente. Usa la narrativa anterior a octubre.
+
 > **Estado actualizado el 23 de agosto de 2026:** fuente comparativa, no manual de marca ni fotografía actual garantizada del competidor. Volver a verificar capacidades, precios y cobertura antes de citar este documento externamente.
 >
 > Versión original 1.0 — julio 2026. Fuente: 40 capturas de la app de Peanut (beta,
