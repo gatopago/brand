@@ -1,3 +1,0 @@
-# Cinco gestos adicionales
-
-Reposo, saludo, salto breve, error recuperable y oreja. 253 PNG completos con miniaturas, cinco WebP lossless, hojas de muestras y escenas SVG con PNG incrustados. Fuentes y prompts conservados en las carpetas vecinas. La placa sentada v1 conserva cabeza, cola y pata; su cuerpo de cuatro patas se descartó para el montaje. La fuente de cuerpo v2 dejó un muñón extra y también se descartó. La v3 deja tres patas; la cuarta es la pieza articulada. Un loop cierra con el mismo PNG; las acciones únicas vuelven al reposo y no reinician solas. Consultar REVISION.md y .qa/raster-gestures/. Ningún recurso del brandkit se sustituye.

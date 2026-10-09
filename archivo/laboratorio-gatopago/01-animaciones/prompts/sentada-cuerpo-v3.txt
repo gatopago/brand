@@ -1,6 +1,0 @@
-Use case: precise-object-edit
-Asset type: corrected transparent seated torso, no head or tail.
-Input image 1 is the exact body edit target.
-Primary request: remove the ENTIRE orange vertical leg/stump just to the RIGHT of the large central black gap. It is the orange column running downward from the right half of the chest to the small flat foot near the bottom, between the left long three-toed front paw and the outer right rounded hindfoot. Remove that entire column up to the right shoulder attachment, not just the toes. Its former area must be truly transparent. Keep the outer rounded right hindfoot intact and keep the left long three-toed forepaw and outer left rounded hindfoot intact.
-There must be only THREE attached feet in the result: left long three-toed forepaw, outer left rounded hindfoot, outer right rounded hindfoot. NO fourth flat foot, NO orange stump on the right of the central gap. The body's right shoulder needs an open socket for a separate waving arm to be attached later.
-Change only that right vertical foreleg/stump. Preserve the exact other anatomy, neck stem, orange/coral shading, chest stripes, stepped black outline, same placement and transparent padded canvas. No additional head, face, tail, detached limb, props, floor or text. Do not redesign the body.

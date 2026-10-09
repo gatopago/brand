@@ -7,7 +7,7 @@ No contiene código de frontend, servidor web ni configuración de despliegue (l
 
 ```
 ├── brandkit/                    IDENTIDAD CANÓNICA
-│                                Manual, logos, personaje, tipografía, colores, plantillas y catálogo local
+│                                Manual, logos, personaje, tipografía, colores, plantillas, iconos, movimiento y catálogo
 │
 ├── estrategia/                  QUÉ ES GATOPAGO Y POR QUÉ
 │   ├── vigente/                 Narrativa 2026-10, promesa de marca, índice maestro y rebranding
@@ -26,8 +26,7 @@ No contiene código de frontend, servidor web ni configuración de despliegue (l
 │   ├── redes/portada-x/         Portada de X y su encargo
 │   └── calendario/              Plan editorial y cronograma de publicación
 │
-├── archivo/                     REGISTRO TÉCNICO E HISTÓRICO (No usar en piezas nuevas)
-│   ├── laboratorio-gatopago/    255 MB de animaciones, propuestas y rigs experimentales
+├── archivo/                     REGISTRO HISTÓRICO (No usar en piezas nuevas)
 │   ├── estrategia/              Documentos de estrategia anteriores y adaptaciones
 │   └── comercial/               Decks de pitch anteriores a la narrativa de octubre
 │

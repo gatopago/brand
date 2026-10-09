@@ -1,3 +1,0 @@
-Use case: precise-object-edit
-Input image 1: edit target, a transparent two-piece GatoPago cat rig plate.
-Change ONLY the small black mouth in the left cat head. Replace the worried upside-down chevron with the same calm little feline W-shaped smile used by GatoPago's original cat: a short black central nose, a very small stem below it, two symmetric low upward-curving stepped mouth corners. Keep the face natural and understated. Do not draw a human grin or tongue. Keep the detached foreleg on the right EXACTLY unchanged. Keep both pieces' positions, dimensions, all ears, eyes, whiskers, outline, tail, paws, shading, colors and transparent padding unchanged. True transparent background. No other changes, no text, no additional objects.

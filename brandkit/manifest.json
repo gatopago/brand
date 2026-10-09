@@ -6667,16 +6667,695 @@
       }
     },
     {
+      "path": "11-iconos/README.md",
+      "bytes": 1335,
+      "sha256": "ca299293c2209de899b35892f7a8efc69da6f94bf3173f4431c1e7934b3b218d",
+      "source": "brandkit editorial / generated",
+      "status": "review"
+    },
+    {
+      "path": "11-iconos/catalogo.css",
+      "bytes": 3736,
+      "sha256": "dc6a276babb8d949af4bc04dbb586a94bae41419c7044928c2a930198a7ea455",
+      "source": "brandkit editorial / generated",
+      "status": "review"
+    },
+    {
+      "path": "11-iconos/index.html",
+      "bytes": 21243,
+      "sha256": "96df3cc7fe63f965ad84eaf5aefd303c0cf39e353474c5df6b0ffc2cfb395018",
+      "source": "brandkit editorial / generated",
+      "status": "review"
+    },
+    {
+      "path": "11-iconos/inventario.json",
+      "bytes": 3169,
+      "sha256": "db53fbb41da4fa3d98e463f269ee5b35d2771227169a5b1e82e082ea49cef8f2",
+      "source": "brandkit editorial / generated",
+      "status": "review"
+    },
+    {
+      "path": "11-iconos/sprite.svg",
+      "bytes": 8056,
+      "sha256": "1e09359df75190c06968cd18550b48dc647c63806ee68b1d8ebe0d658674ac34",
+      "source": "brandkit editorial / generated",
+      "status": "review"
+    },
+    {
+      "path": "11-iconos/svg/actividad.svg",
+      "bytes": 303,
+      "sha256": "a4352f757bf57de5e1850c8e083f60fd2d2461c2b1e9ba7ee7ef16bf44ac4727",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/ajustes.svg",
+      "bytes": 407,
+      "sha256": "80b5ba1b924c1762ea83baae1b63b9aeee95990667e30e815c269d723e73f3e7",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/alerta.svg",
+      "bytes": 360,
+      "sha256": "f5bd12d5dc2b4419a0a7c9d81a4dbfb54ea60e714aa7f34825ef3b85d1e98eeb",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/api.svg",
+      "bytes": 286,
+      "sha256": "a1e43141d01ed7098e64d18059838d7771f8705343b6e4ed85cccc623c4e99d1",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/ayuda.svg",
+      "bytes": 390,
+      "sha256": "05abe0a8f891290bf97bc4695d4ecc9d9dfae1864aa0d1a1a288d760afd77f1e",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/bloquear.svg",
+      "bytes": 334,
+      "sha256": "5e283dfef14f1a12f0843391bad27516b84fc18e315583fc61d0bb7c366ae55a",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/buscar.svg",
+      "bytes": 310,
+      "sha256": "fd4a973b7a977b94201e6bbba05eb868650a4b246f2c6596dbfd80d56870854c",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/cambiar.svg",
+      "bytes": 299,
+      "sha256": "3bae4520d48e945ff20cb4cdfb9cf0758e26c6fa48ddebe1bb435dea79a23e95",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/cobrar.svg",
+      "bytes": 321,
+      "sha256": "02a748b9a27f9d5438b93186ae0c90d7a29f4aa53aadb2e61e60855eb5ba9e48",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/compartir.svg",
+      "bytes": 409,
+      "sha256": "5f0df490bf2791277268ca8b4bcfc92688a1d7cc9ab24b3e5e7afce1c5bdd704",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/comprobante.svg",
+      "bytes": 321,
+      "sha256": "0835f78a54fde371b0f13e8cc4eac1640d5ace6a1b2c35f834302ab7434ac067",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/contactos.svg",
+      "bytes": 349,
+      "sha256": "596091a45251873dd40be19941c93dfa47e71293c2d85fe303b8e90f528c6901",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/copiar.svg",
+      "bytes": 314,
+      "sha256": "a5d5e86eb65cd048f71daabf4ac90e0d202807c3e4d8d18ee07681f9cb5eb517",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/correo.svg",
+      "bytes": 312,
+      "sha256": "8ef1934aebfae5bd45d51ea55feecaab9fe3b7bcc37c6b01da8643259180c000",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/crecer.svg",
+      "bytes": 315,
+      "sha256": "dd5446aefaf8e837d9bef8c3aa8a65640e3690c935a3d4662b7557842be5f42c",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/cuenta.svg",
+      "bytes": 319,
+      "sha256": "924088e73e2f47fe58bc00262905b93a7458fe9853a1b2f90b2ddb03a57f78e2",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/descargar.svg",
+      "bytes": 313,
+      "sha256": "2d83ac8aba432703357df79235aa6e6f2b732f8744c25464d677814f4a00888a",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/dispositivo.svg",
+      "bytes": 330,
+      "sha256": "0171ce4e140772e10fcd88fcaf45156a1da73da5c8f62efea8a745d0e05b9bda",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/enviar.svg",
+      "bytes": 287,
+      "sha256": "d363c53520f23ace5ac7609c26bcfffc477c0153ce4f37cb236f886b42ad7d3a",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/error.svg",
+      "bytes": 315,
+      "sha256": "b9304fa0bc55ca37b0030dbad637ed8e71deeb46099b9845b052e9e7861487aa",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/escanear.svg",
+      "bytes": 457,
+      "sha256": "ab7c8cb8ad7226caa463629a10846f67377d32f827e248dfb914f11d4c2e4271",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/negocio.svg",
+      "bytes": 334,
+      "sha256": "b23a513b3b9881f6e87228f0a9e9cf1a1756d376524428fc4f127bacb15255bb",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/notificaciones.svg",
+      "bytes": 323,
+      "sha256": "532044fbeccbab4cd5543dd6c0a4c096914245873c272a5a1b6a10e1557cfcd0",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/pagar.svg",
+      "bytes": 388,
+      "sha256": "787ec6488113c86e281e766f4318f8c374db519e0f9ddac4887986aa136fdc49",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/passkey.svg",
+      "bytes": 408,
+      "sha256": "d092dc3a47277ee4225b15dd35c93ee81ee1d3245384ef594b124c4a61db4f50",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/pendiente.svg",
+      "bytes": 318,
+      "sha256": "515b69ccb2951457a7139570f25d334a1c73ea352333255f76d250159b710141",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/qr.svg",
+      "bytes": 624,
+      "sha256": "490342aa5700379909835ca62cbb190318003f1d2981436dec334dba6c622909",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/ruta.svg",
+      "bytes": 350,
+      "sha256": "199eb525f4c1b8ff1c4a4525c675f08ae0129155c4e40f96d6da7eeb843877cf",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/saldo.svg",
+      "bytes": 397,
+      "sha256": "c5529f7539aff47e1394e0e6bf0710e3d5a76d25eed78d94b9cb9989e3afc1c9",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/salir.svg",
+      "bytes": 288,
+      "sha256": "808359f1edd79a287a21dfad40554351c32147e5d48a8d563ad238bd161a3968",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/seguridad.svg",
+      "bytes": 310,
+      "sha256": "5c304d1ee75a6aa9c8370558b1fc7f776109fcd02c0e5495f448c7f17f194156",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "11-iconos/svg/verificar.svg",
+      "bytes": 322,
+      "sha256": "e5d98f9a1ddb2b2460cc67f557c678aba1ede3bc256fd157ec33fabf71acbd70",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 24,
+        "height": 24,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "12-movimiento/README.md",
+      "bytes": 1811,
+      "sha256": "2bf5b2c4f1eac297f6757e7737c6f2388cbcd8313c064f6efcfcf9b5e5013456",
+      "source": "brandkit editorial / generated",
+      "status": "review"
+    },
+    {
+      "path": "12-movimiento/catalogo.css",
+      "bytes": 3736,
+      "sha256": "dc6a276babb8d949af4bc04dbb586a94bae41419c7044928c2a930198a7ea455",
+      "source": "brandkit editorial / generated",
+      "status": "review"
+    },
+    {
+      "path": "12-movimiento/index.html",
+      "bytes": 17692,
+      "sha256": "3162e455efc072254f7a332347ff6b95266879d7a3e30a679a94e2243ea8727d",
+      "source": "brandkit editorial / generated",
+      "status": "review"
+    },
+    {
+      "path": "12-movimiento/inventario.json",
+      "bytes": 1196,
+      "sha256": "4c4c429abcc1f843a5e5cdef20f764ff3a689de76b0bd96766fb504eb8ce6710",
+      "source": "brandkit editorial / generated",
+      "status": "review"
+    },
+    {
+      "path": "12-movimiento/reducido/conexion.svg",
+      "bytes": 644,
+      "sha256": "0bf11db9e7d92a16e0d06d10ea38b91f94a66f9c6978af45cb9ab234f977074c",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 304,
+        "height": 160,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "12-movimiento/reducido/confirmacion.svg",
+      "bytes": 542,
+      "sha256": "de987855ad673cb5920905b6b20c23cf314824bac3c91d9921207d45577e8443",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 304,
+        "height": 160,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "12-movimiento/reducido/entrada.svg",
+      "bytes": 661,
+      "sha256": "3ee24045b58cadc27d507ed2a4d2c789b69633c0ce9d397238f050729def66e6",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 304,
+        "height": 160,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "12-movimiento/reducido/espera.svg",
+      "bytes": 522,
+      "sha256": "1b6a6b1790e5d83e548f4766cab7b093032fbb0a553e2ea5237dc73126cfcf16",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 304,
+        "height": 160,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "12-movimiento/reducido/intercambio.svg",
+      "bytes": 720,
+      "sha256": "3b6aff77560ac0edf4ec4608bd7fe00727750a47694775e44e87ed4af846119f",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 304,
+        "height": 160,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "12-movimiento/reducido/ruta.svg",
+      "bytes": 617,
+      "sha256": "83b984b9c8468f88cd75b20fa74b024111ba6f06a833c033291b80d4928bcd85",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 304,
+        "height": 160,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "12-movimiento/svg/conexion.svg",
+      "bytes": 979,
+      "sha256": "51651eda4bd7479c3b1381e2fb6dcb04dbefba1850d805b5f2b5b38e4772d403",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 304,
+        "height": 160,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "12-movimiento/svg/confirmacion.svg",
+      "bytes": 753,
+      "sha256": "fdbf4f9ace09a4b9b030e3e42b7d90681af8dc5f2aba1f304719bc1dee324e1b",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 304,
+        "height": 160,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "12-movimiento/svg/entrada.svg",
+      "bytes": 880,
+      "sha256": "ff634e56686b92ec14b798cbdd5ae1f29d8931fb483dbab628c0014252a41191",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 304,
+        "height": 160,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "12-movimiento/svg/espera.svg",
+      "bytes": 689,
+      "sha256": "58da9f75c33862e23c4c20499035e8f0efeef71764acc415e536a2c9931a79d7",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 304,
+        "height": 160,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "12-movimiento/svg/intercambio.svg",
+      "bytes": 1334,
+      "sha256": "0d3360dac042e3ecaada5d53951fc6fc6624204c2dda4f4ef9f4aa657fefcd27",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 304,
+        "height": 160,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
+      "path": "12-movimiento/svg/ruta.svg",
+      "bytes": 972,
+      "sha256": "2b49e310206193f3f6503de11573e005bd281697242a6d1fa8fcc098c52baf2e",
+      "source": "brandkit editorial / generated",
+      "status": "review",
+      "image": {
+        "format": "svg",
+        "width": 304,
+        "height": 160,
+        "hasAlpha": true,
+        "pages": 1
+      }
+    },
+    {
       "path": "CHANGELOG.md",
-      "bytes": 3847,
-      "sha256": "47bcd13084892fd848686eeb3d15fc9b7661b86ed38e6e7ade752283a469e3b7",
+      "bytes": 4287,
+      "sha256": "00979af8415a3b7b3bab7cdaf22901903d8d5b6bb74aa9c6e23ed228512bce01",
       "source": "brandkit editorial / generated",
       "status": "internal"
     },
     {
       "path": "README.md",
-      "bytes": 4555,
-      "sha256": "3ece909ceb5ffc22872f98d169a0dbf43b05b4c6eb8b744233bbbe90ffd334a4",
+      "bytes": 4973,
+      "sha256": "d12b68d2225b056a3ede1fdead4784ddb9e394568e891b878fb239ea1368aa30",
       "source": "brandkit editorial / generated",
       "status": "internal"
     },
@@ -15600,8 +16279,8 @@
     },
     {
       "path": "release.json",
-      "bytes": 912,
-      "sha256": "ce75f1521a6f6501ed66af3fe680beba24667614fdc70144ee764c7eb1270bee",
+      "bytes": 944,
+      "sha256": "6fc2e6b0da09fda03bd2621041575fca92be800430c0c0a175edd05757b2f5ea",
       "source": "brandkit editorial / generated",
       "status": "internal"
     }

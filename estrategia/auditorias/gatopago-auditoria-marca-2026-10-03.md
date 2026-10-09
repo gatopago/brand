@@ -17,7 +17,7 @@ Prioridades:
 
 ## 1. Iconos
 
-Familia del laboratorio: `archivo/laboratorio-gatopago/04-iconos/`, 32 SVG en una retícula de 24 unidades, trazo de 2 y remates cuadrados. En conjunto es consistente y encaja con el símbolo pixel. Hay cuatro excepciones:
+Familia del laboratorio: `brandkit/11-iconos/` (antes en el laboratorio), 32 SVG en una retícula de 24 unidades, trazo de 2 y remates cuadrados. En conjunto es consistente y encaja con el símbolo pixel. Hay cuatro excepciones:
 
 | Icono | Problema | Propuesta |
 |---|---|---|

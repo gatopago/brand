@@ -15,7 +15,7 @@ import { parse, svg as pixelSvg } from './pixmap.mjs';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const KIT = path.join(root, 'brandkit');
 const OUT = path.join(root, 'contenido/redes/2026-10');
-const ICONS = path.join(root, 'archivo/laboratorio-gatopago/04-iconos/svg');
+const ICONS = path.join(root, 'brandkit/11-iconos/svg');
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 // ---------------------------------------------------------------------------------------------- brand resources

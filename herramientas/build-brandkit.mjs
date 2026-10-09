@@ -129,7 +129,9 @@ for (const file of await files(kit)) {
   const row = {path:relative,bytes:buffer.length,sha256:crypto.createHash('sha256').update(buffer).digest('hex'),source:canonical?'brandkit canonical':provenance.get(relative)||'brandkit editorial / generated'};
   row.status = statusOf(relative,release);
   if(transforms.has(relative)) row.transform=transforms.get(relative);
-  if (/\.(png|webp|jpg|svg)$/i.test(file)) {
+  // An SVG symbol sprite (11-iconos/sprite.svg) has no canvas size, so it is inventoried without image metadata.
+  const sprite = /\.svg$/i.test(file) && /<symbol\b/.test(buffer.toString('utf8')) && !/<svg\b[^>]*\b(viewBox|width)=/.test(buffer.toString('utf8'));
+  if (/\.(png|webp|jpg|svg)$/i.test(file) && !sprite) {
     const m = await sharp(buffer,{animated:true}).metadata();
     row.image = {format:m.format,width:m.width,height:m.pageHeight||m.height,hasAlpha:m.hasAlpha,pages:m.pages||1};
   }

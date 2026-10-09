@@ -1,6 +1,6 @@
 # Iconos corregidos · propuesta de octubre de 2026
 
-**Estado:** propuesta pendiente de aprobación. Los originales siguen intactos en `archivo/laboratorio-gatopago/04-iconos/svg/`.
+**Estado:** propuesta pendiente de aprobación. Los originales siguen intactos en `brandkit/11-iconos/svg/`.
 
 Corrige los cuatro iconos que la [auditoría de marca](../gatopago-auditoria-marca-2026-10-03.md) señaló como fuera de la familia. Mantienen las reglas de la familia: retícula de 24 unidades, trazo de 2, remates cuadrados, uniones en inglete y `currentColor`.
 

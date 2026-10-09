@@ -1,5 +1,10 @@
 # Historial del brandkit
 
+## Iconos y movimiento — 2026-10-09
+
+- Entran al kit, como material en revisión, la familia de 32 iconos (`11-iconos/`) y las seis animaciones de movimiento (`12-movimiento/`). Venían del laboratorio, que se retiró del repositorio; no tenían equivalente oficial y los iconos ya se usaban en las piezas de redes.
+- Sus catálogos usan la tipografía y el símbolo oficiales en lugar de las copias del laboratorio. Los SVG no cambian.
+
 ## Retirada de la app — 2026-10-07
 
 - El kit deja de reflejar o alimentar la app: se retiran `01-manual/producto-app.md`, `01-manual/integracion-frontend.md`, `02-logos/pwa/` (snapshot de iconos y manifiesto) y `05-colores/tokens-app.json`.
